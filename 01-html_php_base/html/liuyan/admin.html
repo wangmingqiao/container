@@ -1,0 +1,30 @@
+<h1>留言列表页面-<a href="index.php?action=add">添加留言</a></h1>
+    <form action="">
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <td>编号</td>
+                <td>标题</td>
+                <td>内容</td>
+                <td>留言者</td>
+                <td>发布时间</td>
+                <td>ip地址</td>
+                <td>心情</td>
+                <td>操作</td>
+            </tr>
+
+            <?php foreach($array as $k=>$v):?>
+                <tr>
+                <td><?php echo $k;?></td>
+                <td><?php echo $v['title'];?></td>
+                <td><?php echo $v['content'];?></td>
+                <td><?php echo $v['author'];?></td>
+                <td><?php echo $v['addtime'];?></td>
+                <td><?php echo $v['ip'];?></td>
+                <td><img src="images/<?php echo $v['feel'];?>.gif" alt="<?php echo $v['feel'];?>" /></td>
+                <td><a href="index.php?action=update&num=<?php echo $k?>">更新</a>|<a href="index.php?action=delete&num=<?php echo $k;?>">删除</a></td>
+                </tr>
+            <?php endforeach;?>
+
+        </table>
+
+    </form>

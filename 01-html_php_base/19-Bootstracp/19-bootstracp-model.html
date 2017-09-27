@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!--dat-api:
+        data-toggle="modal" js插件模式，要使用那种js插件
+        data-target="#myModal" 弹出的目标 -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+          Launch demo modal
+        </button>
+        <!-- Modal -->
+        <!-- modal 弹框的外容器
+        fade 弹框的过度效果 -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- dat-target:可以写id也可以写class -->
+        <button class="btn btn-default custom_btn" data-toggle='' data-target='#m_id' data-dismiss="modal">弹框</button>
+        <div class="modal fade" id="m_id">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">aaa</div>
+                    </div>
+                    <div class="modal-body">bbbb</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $('.custom_btn').click(function(event) {
+                $('#m_id').modal('show');
+            });
+            // 模态框的一些事件
+            // show.bs.modal-显示
+            // shown.bs.modal-已经显示
+            // hide.bs.modal-隐藏
+            // hidden.bs.modal已经隐藏
+            $('#m_id').on('show.bs.modal',function(event){
+                alert('show方法调用了');
+            });
+            $('#m_id').on('shown.bs.modal',function(event){
+                alert('shown方法调用了');
+            });
+            $('#m_id').on('hide.bs.modal',function(event){
+                alert('hide方法调用了');
+            });
+            $('#m_id').on('hidden.bs.modal',function(event){
+                alert('已经隐藏了');
+            });
+        </script>
+
+
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+        ...more buttons...
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="recipient-name" class="control-label">Recipient:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="control-label">Message:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+              </div>
+            </div>
+          </div>
+        </div><br />
+        <!-- 按钮 -->
+        <button class="btn btn-default" data-toggle='modal' data-target='#c_id' data-whatever='user'>传值按钮</button>
+        <!-- 弹框 -->
+        <div class="modal fade" id="c_id">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">弹框</div>
+                        </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                用户名
+                                <input type="text" class="form-control" id="c_input" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss='modal'>确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <script>
+            // $('#c_id').on('show.bs.modal',function (event) {
+            //     //获得button的数据
+            //     var button = $(event.relatedTarget);
+            //     var data = btton.data('whatever');
+            //     $('#c_input').val(data);
+            //     //将button的数据填充到inpu中
+            // });
+
+
+
+            $('#exampleModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget) //时间的触发者
+            console.log(event.relatedTarget);//上级触发者
+            console.log(event.target);//当前触发者
+            // Button that triggered the modal
+            var recipient = button.data('whatever') // Extract info from data-* attributes
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this);
+            modal.find('.modal-title').text('New message to ' + recipient)
+            modal.find('.modal-body input').val(recipient)
+})
+        </script>
+    </body>
+</html>

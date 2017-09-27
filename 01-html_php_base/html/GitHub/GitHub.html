@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>GitHub</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <style>
+/*             span{
+                color:gray;
+            } */
+        </style>
+    </head>
+    <body>
+    <div class="containe-fluid">
+        <div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-form navbar-left" >
+                <img src="images/a.png" class="img-circle">
+                <input type="text" class="form-control" placeholder="Search GitHub" style="background-color:#333333;border:1px solid #333333"/>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#"><strong>Pull request</strong></a></li>
+                <li><a href="#"><strong>Issues</strong></a></li>
+                <li><a href="#"><strong>Marketplace</strong></a></li>
+                <li><a href="#"><strong>Gist</strong></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="glyphicon glyphicon-plus" data-toggle="dropdown"><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">New repository</a></li>
+                        <li><a href="#">Import repository</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">New organization</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="glyphicon glyphicon-asterisk" data-toggle="dropdown"><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Signed in as</a></li>
+                        <li><a href="#">smileYanse</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Your profile</a></li>
+                        <li><a href="#">Your stars</a></li>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Sign out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <table class="table" style="margin-top:-20px">
+                        <tr style="height:60px">
+                            <td>
+                                <div style="margin-top:10px">
+                                    <span class="glyphicon glyphicon-star"><a href="#">zhiyu</a></span>
+                                    <span class="text-muted">starred</span>
+                                    <span class="text-primary"><a href="#">9468305/script</a></span>
+                                    <span class="text-muted">Aug15,2017</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="height:130px">
+                            <td>
+                                <div style="margin-top:20px">
+                                    <div  style="height:60px;width:30px;float:left">
+                                        <span class='glyphicon glyphicon-comment'></span>
+                                    </div>
+                                        <span class="text-muted">Aug15,2017</span>
+                                    <div>
+                                        <strong><a href="#"><span class="text-primary">hangshaoSH</span></a>
+                                        <span>commented on issue</span>
+                                        <a href=""><span class="text-primary">CoderMJLee/MJRefresh#892</span></a></strong>
+                                    </div>
+                                    <div>
+                                        <div style="float:left">
+                                            <img src="images/c.png" class="img-rounded">
+                                        </div>
+                                        <div style="margin-left:75px">
+                                            <span class="text-muted">一个世界上面有多个选择按钮 选择了都是自动下拉刷新 如果网速太慢一直选择 下拉箭头盒子就会一直往下走 如果清空数组 还会出现闪退</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="height:130px">
+                            <td>
+                                <div>
+                                    <div  style="height:60px;width:30px;float:left">
+                                        <span class='glyphicon glyphicon-hand-right'></span>
+                                    </div>
+                                        <span class="text-muted">Aug15,2017</span>
+                                    <div>
+                                        <strong>
+                                            <a href="#"><span class="text-primary">bpoplauschi</span></a>
+                                            <span>pushed to</span>
+                                            <a href=""><span class="text-primary">master</span></a>
+                                            <span>at</span>
+                                            <a href=""><span class="text-primary">rs/SDWeblmage</span></a>
+                                        </strong>
+                                    </div>
+                                    <div>
+                                        <div style="float:left">
+                                            <img src="images/b.png" class="img-rounded">
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <img src="images/b.png" class="img-rounded" style="width:30px;margin-left:10px"/>
+                                                <span class="text-primary"><a href="#">94cdb77</a></span>
+                                                <span class="text-muted">Merge pull request #1995 from DwayneCoussement/strict-protot...</span>
+                                            </div>
+                                            <div>
+                                                <img src="images/b.png" class="img-rounded" style="width:30px;margin-left:10px;margin-top:5px"/>
+                                                <span class="text-primary"><a href="#">4d99ca6</a></span>
+                                                <span class="text-muted">CLANG_WARN_STRICT_PPROTOTRPES:Yse please!</span>
+                                            </div>
+                                            <div style="margin-left:80px">
+                                                <span class="text-primary"><a href="#">View comparision for these 2 commits 》</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="height:130px">
+                            <td>
+                                <div style="margin-top:20px">
+                                    <div  style="height:60px;width:30px;float:left">
+                                        <span class='glyphicon glyphicon-comment'></span>
+                                    </div>
+                                        <span class="text-muted">Aug15,2017</span>
+                                    <div>
+                                        <strong><a href="#"><span class="text-primary">bpoplauschi</span></a>
+                                        <span>merged pull request</span>
+                                        <a href=""><span class="text-primary">rs/SDWeblmage#1995</span></a></strong>
+                                    </div>
+                                    <div>
+                                        <div style="float:left">
+                                            <img src="images/d.png" class="img-rounded" style="width:40px;">
+                                        </div>
+                                        <div>
+                                            <span class="text-muted" style="margin-left:5px" >CLANG_WARN_STRICT_PPROTOTRPES:Yse please!</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="height:130px">
+                            <td>
+                                <div style="margin-top:20px">
+                                    <div  style="height:60px;width:30px;float:left">
+                                        <span class='glyphicon glyphicon-comment'></span>
+                                    </div>
+                                        <span class="text-muted">Aug15,2017</span>
+                                    <div>
+                                        <strong><a href="#"><span class="text-primary">bpoplauschi</span></a>
+                                        <span>commented on pull request</span>
+                                        <a href=""><span class="text-primary">rs/SDWeblmage#1995</span></a></strong>
+                                    </div>
+                                    <div>
+                                        <div style="float:left">
+                                            <img src="images/e.png" class="img-rounded" style="width:40px;">
+                                        </div>
+                                        <div style="margin-left:75px">
+                                            <span class="text-muted">Thanks<strong>@DwayneCoussement</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="height:130px">
+                            <td>
+                                <div style="margin-top:20px">
+                                    <div  style="height:60px;width:30px;float:left">
+                                        <span class='glyphicon glyphicon-link'></span>
+                                    </div>
+                                        <span class="text-muted">Aug15,2017</span>
+                                    <div>
+                                        <strong><a href="#"><span class="text-primary">bpoplauschi</span></a>
+                                        <span>commented on pull request</span>
+                                        <a href=""><span class="text-primary">rs/SDWeblmage#1995</span></a></strong>
+                                    </div>
+                                    <div>
+                                        <div style="float:left">
+                                            <img src="images/f.png" class="img-rounded"  style="width:40px;">
+                                        </div>
+                                        <div style="margin-left:75px">
+                                            <span class="text-muted">Thanks<strong>@DwayneCoussement</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr style="height:130px">
+                            <td>
+                                <div style="margin-top:20px">
+                                    <div  style="height:60px;width:30px;float:left">
+                                        <span class='glyphicon glyphicon-credit-card'></span>
+                                    </div>
+                                        <span class="text-muted">Aug15,2017</span>
+                                    <div>
+                                        <strong><a href="#"><span class="text-primary">bpoplauschi</span></a>
+                                        <span>commented on pull request</span>
+                                        <a href=""><span class="text-primary">rs/SDWeblmage#1995</span></a></strong>
+                                    </div>
+                                    <div>
+                                        <div style="float:left">
+                                            <img src="images/g.png" class="img-rounded" style="width:40px;">
+                                        </div>
+                                        <div style="margin-left:75px">
+                                            <span class="text-muted">Thanks<strong>@DwayneCoussement</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-lg-4">
+                    <table class="table table-bordered">
+                        <tr style="height:60px">
+                            <td>
+                                <div>
+                                    <div style="float:left">
+                                        <span class="glyphicon glyphicon-list-alt"></span>
+                                    </div>
+                                    <div style="margin-left:25px">
+                                        <span class="text-primary"><a href="#"><strong>Quickly review changed methods and functions in your pull requests</strong></a></span>
+                                    </div>
+                                    <div style="margin-top:-40px">
+                                        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table><br />
+                     <table class="table table-bordered">
+                        <tr  class="active">
+                            <td>
+                                <strong>Repositories you contribute to</strong>&nbsp;<span class="badge">1</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="navbar-text"><span class="glyphicon glyphicon-list-alt"></span><span class="text-primary"><a href="#">superwanc/<strong>shareGitPrj</strong></a></span></p><span class="glyphicon glyphicon-star" style="float:right;margin-top:15px"></span>
+                            </td>
+                        </tr>
+                    </table><br />
+                    <table class="table table-bordered">
+                        <tr>
+                            <td>
+                                <p class="navbar-text"style="margin-left:0px"><strong>Your repositories&nbsp;<span class="badge">45</span></strong></p>
+                                <button type="button" class="btn btn-success" style="float:right;margin-top:8px">New repository</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Find a repository..."><br/>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#all" aria-controls="all" role="tab" data-toggle="tab">All</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#public" aria-controls="public" role="tab" data-toggle="tab">Public</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#like" aria-controls="like" role="tab" data-toggle="tab">Like</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#souces" aria-controls="souces" role="tab" data-toggle="tab">Souces</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#forks" aria-controls="forks" role="tab" data-toggle="tab">Forks</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="all">
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>shareGitPrj</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>loser</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>yii2</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>TestGit</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>wanc.github.com</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>TestPHP</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>TestGit68</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>OpenCode_62</strong></a></span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="public">
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>LUHANLUHAN</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>LUHANLUHAN</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>LUHANLUHAN</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>LUHANLUHAN</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>LUHANLUHAN</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>LUHANLUHAN</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>LUHANLUHAN</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>LUHANLUHAN</strong></a></span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="like">
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>look</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>baby</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>cabd</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>container</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>www.baidu.com</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>TestPHP</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>666666</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>888888</strong></a></span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="souces">
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>999999</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>aaaaaa</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>listyou</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>ddddddd</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>fffffff</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>www.sinna.com</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>mmmmmmmm</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>uuuuuuuu</strong></a></span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="forks">
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>ooooooo</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>ggggggggg</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>llllllll</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-leaf"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>pppppppp</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>sssssssss</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>eeeeeeeeee</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>ttttttttt</strong></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-list-alt"></span><span class="text-primary">&nbsp;&nbsp;&nbsp;<a href="#"><strong>yyyyyyyy</strong></a></span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

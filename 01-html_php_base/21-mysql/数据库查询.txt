@@ -1,0 +1,30 @@
+查询基本语法
+-查内容                     select[字段][内容]
+-查位置                     from[表名]
+-查的条件                   where[条件]
+
+注意：只要是字符类型的数据，sql语句中必须加''引号
+
+1.条件
+1.1-判断符 =   >   <   >=
+1.2-集合  in     not in
+1.3-范围  between and
+1.4-匹配  like (%通用符号)    (_占位符)
+1.5-空值  is null(空值) is not null(非空)
+1.6-多条件 and(并且)     or(或者)
+1.7-排序      order by    默认升序(asc)   降续(desc)
+1.8-分组      group by    (一般跟集合函数联合使用)
+SELECT GROUP_CONCAT(f_name),s_id from fruits GROUP BY s_id HAVING count(*)>2;
+1.9-分组过滤
+SELECT count(f_name),s_id from fruits GROUP BY s_id with ROLLUP;
+1.10-归纳统计   with    rollup
+1.11-限制结果数量 limit
+SELECT * FROM fruits GROUP BY s_id,f_name LIMIT 2;
+
+2.内容
+2.1-查询不重复的内容 distinct
+
+连接查询
+left join 两表链接的数据+left表的数据
+inner jion 两表链接的数据
+right join 两表链接的数据+right表的数据

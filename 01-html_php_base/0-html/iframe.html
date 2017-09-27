@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>iframe框架导航实例</title>
+        <style>
+            .container{
+                width: 90%;
+                margin:0 auto;
+            }
+            .header{
+                height:80px;
+                width:100%;
+                background-color: red;
+            }
+            .left{
+                float:left;
+
+                width:20%;
+            }
+            .right{
+                float:left;
+                width:80%;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <div class="header">我是头部</div>
+        <div class="left">
+            <ul>
+                <li> <a href="http://www.baidu.com" target="riframe">百度</a></li>
+                <li> <a href="http://www.sina.com" target="_blank">新浪</a></li>
+                <li> <a href="" >导航3</a></li>
+                <li> <a href="" >导航4</a></li>
+                <li> <a href="" >导航5</a></li>
+                <li> <a href="" >导航6</a></li>
+                <li> <a href="" >导航7</a></li>
+                <li> <a href="" >导航8</a></li>
+                <li> <a href="" >导航9</a></li>
+                <li> <a href="" >导航10</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <iframe name="riframe" src="base.html" frameborder="0" width="80%" height="400px"></iframe>
+        </div>
+    </div>
+
+
+    </body>
+</html>

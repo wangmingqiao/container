@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>事件的监听</title>
+    </head>
+
+    <body>
+        <p></p>
+        <button id="btn">点击</button>
+    <script>
+        window.addEventListener('resize',function(){
+            var h=window.innerHeight;
+            var w=window.innerWidth;
+            document.getElementsByTagName('p')[0].innerHTML='屏幕的宽'+w+'屏幕的高'+h;
+        });
+        var i=0;
+        document.getElementById('btn').addEventListener('click',function(){
+            i++;
+            this.innerHTML='点击次数'+i;
+        });
+    </script>
+    </body>
+</html>

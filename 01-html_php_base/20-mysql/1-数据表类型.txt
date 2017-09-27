@@ -1,0 +1,23 @@
+时间类型
+表 a
+
+year
+--insert into a values(10) ->2010
+
+
+time
+--insert into a values(10) ->00:00:10
+--insert into a values('08:08:08') ->08:08:08
+--insert into a values('2 08:08') -> 24*2+08:08:00
+
+date
+--insert into a values(20101010) ->2010-10-10
+
+
+datetime
+--insert into a values(20101010080808) ->2010-10-10 08:08:08
+--insert into a values(101010080808) ->2010-10-10 08:08:08
+
+
+timestamp
+--跟 datetime-一样

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .btn{
+                border: none;
+                background:yellow;
+            }
+            .active{
+                background:red;
+            }
+            .alert-info{
+                display:none;
+                background: cyan;
+                color: red;
+                width: 80%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="div1" class="box box-re">
+    <button type="button" class="btn active">栏目一</button>
+    <button type="button" class="btn">栏目二</button>
+    <button type="button" class="btn">栏目三</button>
+    <button type="button" class="btn">栏目四</button>
+    <div class="alert-info" style="display: block;">栏目一的内容<br>栏目一的内容<br>栏目一的内容<br>栏目一的内容</div>
+    <div class="alert-info">栏目二的内容<br>栏目二的内容<br>栏目二的内容<br>栏目二的内容</div>
+    <div class="alert-info">栏目三的内容<br>栏目三的内容<br>栏目三的内容<br>栏目三的内容</div>
+    <div class="alert-info">栏目四的内容<br>栏目四的内容<br>栏目四的内容<br>栏目四的内容</div>
+
+    <script>
+        window.onload = function () {
+            var buttons = document.getElementsByTagName('button');
+            var contents = document.getElementsByClassName('alert-info');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].index = i;
+                buttons[i].onclick = function () {
+                    for (var i = 0; i < contents.length; i++) {
+                        contents[i].style.display = 'none';
+                        buttons[i].className = 'btn';
+                    }
+                    buttons[this.index].className = 'btn active';
+                    contents[this.index].style.display = 'block';
+                }
+
+            }
+        }
+    </script>
+</div>
+    </body>
+</html>

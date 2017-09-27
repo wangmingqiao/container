@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>js DOM操作</title>
+    </head>
+    <body>
+    <h1 id="h_id">我是标题1</h1>
+    <h1 id="h_id">我是标题2</h1>
+
+    <h2 class="class_h">我是标题1</h2>
+    <h2 class="class_h">我是标题2</h2>
+    <h2 class="class_h">我是标题3</h2>
+
+    <h3 name="h">hhhhhhhhh</h3>
+    <script>
+        //介绍
+        //根据id查找元素
+        var element=document.getElementById("h_id");
+        //节点对象
+        //内容属性
+        // alert(element.innerHTML);
+        element.innerHTML='我是修改的内容';
+        element.style.color='red';
+        element.style.backgroundColor='blue';
+        element.style.border='yellow 5px solid';
+        //根据class查找元素
+        var element_arr = document.getElementsByClassName('class_h');
+        var el = element_arr[0];
+        el.style.backgroundColor='pink';
+        element_arr[1].style.color='cyan';
+        element_arr[1].innerHTML='我是JS修改内容';
+        //根据元素名查找元素
+        var h_arr = document.getElementsByTagName('h1');
+        h_arr[0].innerHTML='hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh';
+        //根据name查找元素
+        var name_arr=document.getElementsByName('h');
+        name_arr[0].innerHTML='namenamename';
+    </script>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>日历</title>
+        <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+          .content{
+            /* margin: 0 auto; */
+
+            height: 350px;
+            width: 200px;
+            /* border:1px red solid; */
+            background-color:   #E8E8E8;
+            float: left;
+            text-align: center;
+
+          }
+          button{
+            height:55px;
+            width:55px;
+            background-color:black;
+            color:white;
+            margin-top: 10px;
+
+          }
+          button:hover{
+            background-color:white;
+            color:black;
+
+          }
+
+        </style>
+    </head>
+    <body>
+	for(1;1;1)
+	{
+    <div>
+    <div class="content" >
+        <button id="bt1" name="bt">1<br>JAN</button>
+        <button id="bt2" name="bt">2<br>FEB</button>
+        <button id="bt3" name="bt">3<br>MAR</button>
+        <button id="bt4" name="bt">4<br>APR</button>
+        <button id="bt5" name="bt">5<br>MAY</button>
+        <button id="bt6" name="bt">6<br>JUN</button>
+        <button id="bt7" name="bt">7<br>JUL</button>
+        <button id="bt8" name="bt">8<br>AUG</button>
+        <button id="bt9" name="bt">9<br>SEP</button>
+        <button id="bt10" name="bt">10<br>OCT</button>
+        <button id="bt11" name="bt">11<br>NOV</button>
+        <button id="bt12" name="bt">12<br>DEC</button>
+
+    </div>
+    <div class="footer"><h2></h2>
+         <p></p></div>
+    </div>
+        <script>
+        // var btArr=['bt1','bt2','bt3','bt4','bt5','bt6','bt7','bt8','bt9','bt10','bt11','bt12'];
+        var bt_arr=document.getElementsByTagName('bt');
+        var aArr=[
+        '这是一月活动内容',
+        '这是二月活动内容',
+        '这是三月活动内容',
+        '这是四月活动内容',
+        '这是五月活动内容',
+        '这是六月活动内容',
+        '这是七月活动内容',
+        '这是八月活动内容',
+        '这是九月活动内容',
+        '这是十月活动内容',
+        '这是十一月活动内容',
+        '这是十二月活动内容',
+        ];
+
+        for(var i=0;i<bt_arr.length;i++){
+            bt_arr[i].index=i;
+            bt_arr[i].onclick=function(){
+                for(var j=0;j<btArr.length;j++){
+                    bt_arr[j].className='';
+                }
+                footer.innerHTML='<h2>'+(this.index+1)+'月活动</h2>''<p>'+aArr[this.index]+'</p>'
+            }
+        }
+
+
+
+
+        </script>
+		}
+    </body>
+</html>

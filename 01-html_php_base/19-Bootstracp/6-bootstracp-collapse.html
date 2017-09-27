@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    <a class="btn btn-primary" href="#collapse_example" data-toggle="collapse">点击</a>
+        <div class="collapse" id="collapse_example">
+            <div class="well">
+                ajfd;askrfjeaszfjr'searfa'repg
+                ;ozisgj'dfjog's'oagjuf'jvgljdf
+            </div>
+        </div>
+
+
+        <!-- 多折叠 -->
+        <div class="panel-group" id="p_id">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a href="#collapse_one" data-toggle='collapse' data-parent="#p_id">点击展开1</a>
+                    </h4>
+                </div>
+                <div id="collapse_one" class="collapse">
+                    <div class="panel-body">
+                        hfdkhgfaerfgushklfjhaidsfdzlfvzkhflskizhfsz
+                        khfhdszjglkdoaszfjdmkhzdgjkfdzghsdgfjkdflgj
+                        dkfgjkldfjgdfkjgreigndhfguh
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a href="#collapse_two" data-toggle='collapse'  data-parent="#p_id">点击展开2</a>
+                    </h4>
+                </div>
+                <div id="collapse_two" class="collapse">
+                    <div class="panel-body" >
+                        hfdkhgfaerfgushklfjhaidsfdzlfvzkhflskizhfsz
+                        khfhdszjglkdoaszfjdmkhzdgjkfdzghsdgfjkdflgj
+                        dkfgjkldfjgdfkjgreigndhfguh
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a href="#collapse_three" data-toggle='collapse' data-parent="#p_id">点击展开3</a>
+                    </h4>
+                </div>
+                <div id="collapse_three" class="collapse">
+                    <div class="panel-body">
+                        hfdkhgfaerfgushklfjhaidsfdzlfvzkhflskizhfsz
+                        khfhdszjglkdoaszfjdmkhzdgjkfdzghsdgfjkdflgj
+                        dkfgjkldfjgdfkjgreigndhfguh
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+        // 单独控制，折叠的内容 使用collapse
+            $("#collapse_one").collapse('show');
+            $("#collapse_two").collapse('toggle');
+            $("#collapse_three").collapse('hide');
+            // 事件
+            $("#collapse_one").on('show.bs.collapse',function(e){
+                console.log(e.target);
+            })
+        </script>
+    </body>
+</html>

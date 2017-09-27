@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>照片墙</title>
+        <style>
+        .a{
+            position:relative;
+            background-image:url('images/i.jpg');
+            background-size:cover;
+            border: solid 13px #DCDCDC;
+            width:1500px;
+            height:1000px;
+            margin:0 auto;
+
+        }
+        .b{
+            height:200px;
+            width:100%;
+            text-align: center;
+            font-size:54px;
+            text-shadow: 5px 5px 5px  #00BFFF;
+            letter-spacing:50px;
+        }
+        img{
+            z-index: 20;
+            width:175px;
+            height:220px;
+            border:3px solid #DCDCDC;
+            box-shadow: 4px 4px 4px #707070 ;
+            position:relative;
+        }
+        .c{
+            left:350px;
+            top:100px;
+            transform:rotate(-70deg);
+        }
+        .d{
+            left:500px;
+            top:80px;
+            transform:rotate(60deg);
+        }
+        .e{
+            left:300px;
+            top:-100px;
+            transform:rotate(-30deg);
+        }
+        .h{
+            left:510px;
+            top:-620px;
+            transform:rotate(50deg);
+        }
+        .i{
+            left:700px;
+            top:-620px;
+            transform:rotate(-30deg);
+        }
+        .j{
+            left:900px;
+            top:-1020px;
+            transform:rotate(50deg);
+        }
+        .k{
+            left:700px;
+            top:-1300px;
+            transform:rotate(-50deg);
+        }
+        .l{
+            left:900px;
+            top:-1320px;
+            transform:rotate(-50deg);
+        }
+        img:hover{
+            z-index:600;
+            transform: rotate(0deg) scale(2.3, 2.7);
+        }
+        </style>
+    </head>
+    <body>
+        <div class="a">
+            <div class="b">照片墙</div>
+            <div width="100%" height="600px">
+                <div><img class="c" src="images/a.png" ></div>
+                <div><img class="d" src="images/b.png" ></div>
+                <div><img class="e" src="images/c.jpg" ></div>
+                <div><img class="h" src="images/d.jpeg"></div>
+                <div><img class="i" src="images/e.jpeg" ></div>
+                <div><img class="j" src="images/f.jpg" ></div>
+                <div><img class="k" src="images/g.jpg" ></div>
+                <div><img class="l" src="images/h.jpg" ></div>
+            </div>
+        </div>
+    </body>
+</html>

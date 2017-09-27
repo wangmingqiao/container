@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>flex布局</title>
+        <style>
+            .container{
+                border: 2px red solid;
+                display: flex;
+            }
+            .nav{
+                border:2px black solid;
+                width:200px;
+            }
+            .content{
+                border:2px blue solid;
+                /* 剩余位置是100%*/
+                flex:1;
+                /* flex:扩展 缩放 base(固定宽度);
+                flex:auto ;1 1 auto;
+                flex:initial;0 1 auto;
+                flex:none;0 0 auto; */
+
+            }
+            .section{
+                border:2px green solid;
+            }
+            .header{
+                border:2px yellow solid;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="header">我是头部</div>
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <li>list1</li>
+                <li>list2</li>
+                <li>list3</li>
+                <li>list4</li>
+                <li>list5</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="section">title</div>
+            <div class="section">content</div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li>list1</li>
+                <li>list2</li>
+                <li>list3</li>
+                <li>list4</li>
+                <li>list5</li>
+            </ul>
+        </div>
+    </div>
+    </body>
+</html>

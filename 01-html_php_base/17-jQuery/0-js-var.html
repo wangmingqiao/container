@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>js变量作用域</title>
+    </head>
+    <body>
+    <script>
+        var a=0;
+        function test1() {
+            a++;
+        }
+        function test2() {
+            a++;
+        }
+        test1();
+        test2();
+        console.log(a);
+
+        //局部变量方法内声明
+        function test3() {
+            var b=3;
+        }
+        console.log(b);
+
+    </script>
+    </body>
+</html>

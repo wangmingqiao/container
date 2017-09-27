@@ -1,0 +1,41 @@
+/*
+* @Author: WMQ
+* @Date:   2017-07-19 14:23:34
+* @Last Modified by:   WMQ
+* @Last Modified time: 2017-07-19 20:08:54
+*/
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('1.jpg');
+    background-size: cover;
+}
+div{
+    /* 登录框的居中*/
+
+    margin:100px auto;
+    margin-top: 300px;
+     /* 宽高 */
+    width: 300px;
+    height: 300px;
+    background-color:#B0C4DE;
+    /* 透明 */
+    opacity: 0.6;
+}
+table{
+    margin:0 auto;
+    position: relative;
+    padding-top: 80px;
+}
+p{
+    margin:0 auto;
+    position:relative;
+    top: 20px;
+    margin-left: 50px;
+}
+button{
+    margin:0 auto;
+    position:relative;
+    top: 2px;
+    margin-left: 200px;
+}

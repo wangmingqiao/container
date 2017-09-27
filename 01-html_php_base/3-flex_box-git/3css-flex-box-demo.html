@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>flex-box实验</title>
+        <style>
+            .container{
+                height: 400px;
+                border: 2px cyan solid;
+                display: flex;
+
+                /* 方向：水平，垂直 */
+                /* row
+                row-reverse
+                column
+                column-reverse */
+                flex-direction: row;
+
+                /* 水平排列 */
+                /* flex-start
+                flex-end
+                center
+                flex-between
+                space-between
+                space-around */
+                justify-content:center;
+
+                /* 换行
+                warp
+                nowarp
+                warp
+                warp-reverse */
+                flex-wrap: wrap;
+
+                /* 垂直 */
+                /* flex-start
+                flex-end
+                center
+                baseline
+                stretch */
+                align-items: center;
+
+                /* 垂直有空隙的时候 */
+                /* flex-start
+                flex-end
+                center
+                space-around
+                space-between */
+                align-content:center;
+
+            }
+            .item{
+                border:2px blue solid;
+                flex:auto;/* 1 1 auto -->auto
+                                0 1 auto -->initial
+                                0 0 auto-->none*/
+            }
+            .order{
+                order:1;/* 弹性元素的排序 */
+                /* 弹性元素自己垂直方向的布局 */
+               /*  baseline
+                flex-start
+                flex-end
+                center
+                stretch */
+                /* align-self:flex-end ; */
+
+
+                flex:0 1;
+            }
+            ul{
+                display:flex;
+                justify-content:space-around;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="nav">
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li>list5</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="item order">我是内容1</div>
+        <div class="item">我是内容2</div>
+        <div class="item">我是内容3</div>
+        <div class="item">我是内容4</div>
+        <div class="item">我是内容5</div>
+        <div class="item">我是内容6</div>
+        <div class="item">我是内容7</div>
+    </div>
+    </body>
+</html>

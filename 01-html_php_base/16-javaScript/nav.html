@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>栏目</title>
+        <style>
+            span{
+                background-color: yellow;
+                font-size:20px;
+            }
+            div{
+                height:200px;
+                width: 490px;
+                background-color:cyan;
+            }
+            div{
+                margin-top: -17px;
+            }
+        </style>
+    </head>
+    <body>
+        <span onmouseover="over(this)" onmouseout="out(this)"><b>栏目一</b></span>
+        <span onmouseover="over(this)" onmouseout="out(this)"><b>栏目二</b></span>
+        <span onmouseover="over(this)" onmouseout="out(this)"><b>栏目三</b></span>
+        <span onmouseover="over(this)" onmouseout="out(this)"><b>栏目四</b></span>
+        <span onmouseover="over(this)" onmouseout="out(this)"><b>栏目五</b></span>
+        <span onmouseover="over(this)" onmouseout="out(this)"><b>栏目六</b></span>
+        <span onmouseover="over(this)" onmouseout="out(this)"><b>栏目七</b></span>
+        <div>
+            <p class="p"></p>
+            <p class="p"></p>
+            <p class="p"></p>
+            <p class="p"></p>
+            <p class="p"></p>
+        </div>
+        <script>
+        function over(element){
+            element.style.background='red';
+            var es=element.innerHTML.split('</b>');
+            for(var i=1;i<5;i++){
+                document.getElementsByClassName('p')[i].innerHTML='<h2>'+es[0]+'的内容</h2>';
+            }
+        }
+        function out(element){
+            element.style.background='yellow';
+        }
+        </script>
+    </body>
+</html>

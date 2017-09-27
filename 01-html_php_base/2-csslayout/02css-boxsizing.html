@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>box-sizing</title>
+        <style>
+        /* boz-sizing:元素实际宽度的计算方式 */
+            div{
+                height:50px;
+                width:500px;
+                margin:20px auto;
+
+                /* box-sizing:content-box 默认值，content的宽度和width的宽度一致 *
+                /* border-box border内的实际宽度和width设置的宽度保持一致 */
+                -wekit-box-sizing:border-box;
+                -moz-box-sizing: border-box;
+                -ms-box-sizing:border-box;
+                -o-box-sizing:border-box;
+                box-sizing:content-box;
+                /* 兼容性问题，因为box-sizing是新的属性，遇到兼容问题加前缀 */
+                /* -webkit- safari chrome
+                -moz- 火狐
+                -o- opera浏览器
+                -ms- ie */
+            }
+            .a{
+                background-color: red;
+            }
+            .b{
+                color: white;
+                background-color:black;
+                padding: 50px;
+                border:20px yellow solid;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="a">a</div>
+    <div class="b">b</div>
+    </body>
+</html>

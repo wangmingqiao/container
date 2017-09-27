@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>window对象</title>
+    </head>
+    <body>
+    <button id="open">打开新的窗口</button>
+    <button onclick="nwindow.close()">关闭窗口</button>
+    <button onclick="alert('弹框')">弹框</button>
+    <button id="confirm">对话框</button>
+    <button id="prompt">用户和输入对话框</button>
+    <button id="clock"></button>
+    <script>
+        // 弹框
+        // window.alert('a');
+        // open-打开新的窗口
+        var nwindow;
+        document.getElementById('open').onclick=function(){
+            nwindow=window.open('http://www.baidu.com','a','width=200,height=200');
+            nwindow.document.write('<p>我是新的窗口</p>');
+        };
+        document.getElementById('confirm').onclick=function(){
+            var res=window.confirm('我是对话框');
+            if (res) {
+                this.innerHTML='对话框选择-确定';
+            }else{
+                this.innerHTML='对话框选择-取消';
+            }
+        };
+
+        document.getElementById('prompt').onclick=function(){
+            var res=window.prompt('请输入你的名字');
+            if (res) {
+                this.innerHTML='用户输入了'+res;
+            }else{
+                this.innerHTML="用户没输入";
+            }
+        };
+        //重复执行
+        var time_btn=document.getElementById('clock');
+        var interval=window.setInterval(function(){
+            //显示时钟
+            //获得时间
+            var date=new Date();
+            // toLocaleString()时间转换成字符串
+            var time_str=date.toLocaleTimeString();
+            time_btn.innerHTML=time_str;
+        },1000);
+        time_btn.onclick=function(){
+            window.clearInterval(interval);
+        };
+
+        window.setTimeout(function(){
+            alert('message');
+        },5000);
+    </script>
+    </body>
+</html>

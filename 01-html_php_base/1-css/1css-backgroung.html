@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>css-背景</title>
+        <style>
+            body{
+                /* 颜色的值有三种赋值方式1.名字2.16进制3.rgb */
+                background-color: red;
+                background-color:#fff;
+
+                /* rgba(红,绿,蓝,透明); */
+                /* 颜色值的范围0-255 */
+                background-color:rgb(60, 44, 50);
+
+                /* 背景图片 */
+                background-image: url('images/1.jpg');
+
+                /* 平铺 */
+                background-repeat: no-repeat;
+
+                /* 横向平铺或纵向平铺 */
+                /* background-repeat:repeat-y; */
+                /* background-repeat:repeat-x; */
+
+                /* 图片的起始位置 */
+                /* background-position: center; */
+
+                /* 背景大小1.宽高2.百分比 */
+
+                /* 将背景图像等比缩放到完全覆盖容器，背景图像有可能超出容器 */
+                /* background-size:cover; */
+
+                /* 将背景图像等比缩放到宽度或高度与容器的宽度或高度相等，背景图像始终被包含在容器内 */
+                /* background-size:contain ;*/
+
+                /* 背景层的混合模式（图片与颜色） */
+                background-blend-mode:color-dodge;
+            }
+        </style>
+    </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,98 @@
+1,创建表简单语法
+create table [表名](
+    [字段名] [数据类型(长度)],
+    [字段名] [数据类型(长度)]
+)
+
+2,包含约束的
+
+约束:
+1,主键
+2,外键
+3,非空
+4,唯一
+5,默认
+
+1,主键
+create table [name](
+    id int(10) primary key,
+    name varchar(20)
+)
+
+create table [name](
+    id int(10),
+    name varchar(20),
+    primary key(id,name)
+)
+
+2, 非空,唯一,默认
+create table [name](
+    id int(10)          primary key,
+    name varchar(20)    not null,
+    age int(3)          unique default 10,
+    class varchar(10)   default 'php'
+)
+
+3,自增 ai
+auto_increment
+create table [name](
+    id int(10) primary key auto_increment,
+    name varchar(20),
+    primary key(id,name)
+)
+
+4,外键约束
+student 表
+zy_home 表
+
+create table student(
+    id int(10) priMary key auto_increment,
+    name varchar(20),
+    home_id int(10),
+    constraint hh foreign key (home_id) references zy_home(id)
+)
+
+create table student(
+    id int(10) priMary key auto_increment,
+    name varchar(20),
+    home_id int(10) foreign key references zy_home(id)
+)
+
+
+create table zy_home(
+    id int(10) priMary key auto_increment,
+    floor int(20)
+)
+
+
+1,数据表的修改
+
+alter table [表名] [操作]
+
+操作:
+rename  修改表名
+--alter table a rename b;
+
+change  字段名和数据类型
+--alter table a change oldname newname int(10);
+
+modify  改数据类型和移动位置:first after
+--alter table a modify name int(10) after id;
+--alter table a modify name int(10) first;
+
+add     增加字段,添加约束
+--alter table a add newname varchar(20) first;
+--alter table a add newname varchar(20) after id;
+--alter table a add newname varchar(20) primary key auto_increment;
+
+
+drop    删除字段
+--alter table a drop name;
+--alter table a drop foreign key o_id;
+
+2,删除表
+drop table [表名];
+如果有外键约束,需要先删除外键约束,再删除表;
+
+关键字-----一定要记住!!!!!!!!!;
+

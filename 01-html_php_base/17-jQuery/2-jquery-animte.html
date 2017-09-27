@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>jquery 动画效果</title>
+        <script src='jquery-3.2.1.min.js'></script>
+        <style>
+            div{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+            }
+            .a{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+    <button class="btn_h">隐藏-hide</button>
+    <button class="btn_s">显示-show</button>
+    <button class="btn_t">toggle</button>
+    <button class="btn_fadein">fadein</button>
+    <button class="btn_fadeout">fadeout</button>
+    <button class="btn_fadetoggle">fadetoggle</button>
+    <button class="btn_fadeto">fadeto</button>
+    <button class="btn_slidDown">slidDown</button>
+    <button class="btn_slidUp">slidUp</button>
+    <div>内容</div>
+    <div class="a">内容</div>
+    <script>
+        $('.btn_h').click(function(event) {
+            $('div').hide('slow', function() {
+                alert('div隐藏了');
+            });
+        });
+
+
+        $('.btn_s').click(function(event) {
+            $('div').show('slow', function() {
+                alert('div显示了');
+            });
+        });
+
+
+        $('.btn_t').click(function(event) {
+            $('div').toggle();
+        });
+
+
+        $('.btn_fadein').click(function(event) {
+            $('div').fadeIn();
+        });
+
+
+        $('.btn_fadeout').click(function(event) {
+            $('div').fadeOut();
+        });
+
+
+        $('.btn_fadetoggle').click(function(event) {
+            $('div').fadeToggle();
+        });
+
+
+        $('.btn_fadeto').click(function(event) {
+            $('div').fadeTo("slow",0.15);
+        });
+
+
+        $('.btn_slidDown').click(function(event) {
+            $('.a').slideDown("slow");
+        });
+
+
+        $('.btn_slidUp').click(function(event) {
+            $('.a').slideUp("slow");
+        });
+    </script>
+    </body>
+</html>

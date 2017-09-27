@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+
+            span{
+                margin: 0 20px;
+                background: yellow;
+            }
+            p{
+                margin:0;
+                padding:0;
+                background:aqua;
+            }
+            .active{
+            background:red;
+        }
+        </style>
+    </head>
+    <body>
+        <span>栏目一</span>
+        <span>栏目二</span>
+        <span>栏目三</span>
+        <span>栏目四</span>
+        <p>啦啦啦啦啊啊啦啦啦啦啦</p>
+        <p>啦啦啦啦啊啊啦啦啦啦啦</p>
+        <p>啦啦啦啦啊啊啦啦啦啦啦</p>
+        <p>啦啦啦啦啊啊啦啦啦啦啦</p>
+        <script>
+                var span=document.querySelectorAll("span")
+                var pp=document.querySelectorAll("p")
+                    for(var i=0;i<span.length;i++){
+                       span[i].onclick=function(){
+                        for(var j = 0;j < span.length; j++){
+                             span[j].className=" "
+                            }
+                        this.className = "active";
+                        // alert("message")
+                        for(var z=0;z<pp.length;z++){
+                            var s=this.innerHTML
+                            pp[z].innerText=s+"内容"
+                        }
+                    }
+
+                }
+        </script>
+    </body>
+</html>

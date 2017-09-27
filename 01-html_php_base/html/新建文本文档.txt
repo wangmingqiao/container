@@ -1,0 +1,1 @@
+                                    echo "<a href='index1.php?action=phone_dele&id=<?php echo $id;?>'><span class='glyphicon glyphicon-trash' aria-hidden='true'></span>É¾³ý</a>";

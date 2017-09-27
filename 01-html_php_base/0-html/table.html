@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>表格的融合</title>
+        <style>
+            .a{
+                border-bottom: double 5px;
+            }
+        </style>
+    </head>
+    <body>
+    <!-- 课程表 -->
+    <table border="1" rules="all" width="50%" height="300px">
+        <tr>
+            <td colspan="2">1-1 1-2</td>
+            <td>1-3</td>
+        </tr>
+        <tr>
+            <td>2-1</td>
+            <td>2-2</td>
+            <td rowspan="2">2-3 3-3</td>
+        </tr>
+        <tr>
+            <td>3-1</td>
+            <td>3-2</td>
+        </tr>
+    </table>
+    <br />
+    <table width="1000px" >
+      <tr align="center" >
+        <td><pre><h1><span class="a"> 费 用 报 销 单 </span></h1></pre></td>
+    </tr>
+         <tr  height="40px">
+        <td colspan="5"><pre><h2>部门__________________       报销日期       年      月      日          附件    张</h2></pre></td>
+    </tr>
+    </table>
+    <table border="1" rules="all" width="1000px" height="300px">
+        <tr align="center">
+            <td >费用项目</td>
+            <td width="150px">类别</td>
+            <td width="150px">金额</td>
+            <td rowspan="2" width="170px">部门负责人(签章)</td>
+            <td rowspan="2" width="170px"></td>
+        </tr >
+        <tr height="30px">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align="center">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td rowspan="2">审 查 意 见</td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align="center">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td rowspan="2">报销人(签章)</td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td>报销金额合计</td>
+            <td></td>
+            <td></td>
+            <td colspan="2">￥____________________</td>
+        </tr>
+        <tr height="45px">
+            <td colspan="5">核实金额(大写)&nbsp;&nbsp;&nbsp;拾&nbsp;&nbsp;&nbsp;万&nbsp;&nbsp;&nbsp;佰&nbsp;&nbsp;&nbsp;仟&nbsp;&nbsp;&nbsp;拾&nbsp;&nbsp;&nbsp;元&nbsp;&nbsp;&nbsp;角&nbsp;&nbsp;&nbsp;分&nbsp;&nbsp;&nbsp;￥&nbsp;&nbsp;&nbsp;_____________________</td>
+        </tr>
+    </table>
+    <table width="1000px">
+      <tr>
+        <td><h2><pre>     主管            复核            出纳               制表</pre></h2></td>
+    </tr>
+    </table>
+    </body>
+</html>

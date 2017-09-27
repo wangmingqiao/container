@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JS 函数</title>
+    </head>
+    <body>
+    <button onclick="userClick()">点我！！！</button>
+    <h1 id='aa' onclick="click_element()">点我呀！</h1>
+    <script>
+        //声明函数 function
+        var a=1,b=2;
+        console.log(sum(a,b));
+        //声明
+        function sum(a,b){
+            return a+b;
+        }
+        //调用
+        // sum(a,b);
+
+        function userClick(){
+            alert('你点我了是吧，我弹出来啦');
+        }
+        var isClick=false;
+        function click_element(){
+            isClick=!isClick;
+            document.getElementById('aa').innerHTML=isClick?'你真点呀！！':'点我呀！';
+
+        }
+        </script>
+    </body>
+</html>

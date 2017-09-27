@@ -1,0 +1,86 @@
+<!-- js基础 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1 id='zz'></h1>
+    </body>
+    <script>
+        //js代码
+        //变量的声明
+        var a=1;
+        var b=2;
+        var c=a+b;
+        //一次生命多个变量
+        var a=1,b=1;
+
+        // 数据类型
+        //整形
+        var a=1;
+        //字符串
+        var a='hello js';
+        var b='你好';
+        //字符串的拼接
+        console.log(a+b);
+
+        //布尔
+        var a=true;
+        var b=false;
+        if (a) {
+            console.log('a成立');
+        }
+        if (!b) {
+            console.log('b不成立');
+        }
+        //逻辑
+        if (a||b) {
+            console.log('或');
+        }
+        if (a&&b) {
+            console.log('并且');
+        }else{
+            console.log('并且不成立');
+        }
+        if (a==true) {
+            console.log('比较');
+        }
+
+        //数组
+        var a=['a','b','c','d'];
+        a[0]='aa';
+        //循环 for
+        for (var i = 0; i < a.length; i++) {
+            console.log('数组'+a[i]);
+        }
+        //for in循环
+        for(var item in a){
+            document.write(item);
+            console.log('for-in'+a[item]);
+        }
+
+
+
+
+
+        // alert(a);
+        // console.log(a);
+        console.log(a[3]);
+        //对象
+        var xiaom={name:'小明',sex:'男',age:20};
+        // console.log(xiaom["name"]);
+        console.log(xiaom.name);
+        xiaom.age=30;
+        console.log(xiaom.age);
+
+        //控制台输出
+        // console.log(c);
+        // //弹框输出
+        // window.alert(c);
+        // //写入文档
+        // document.write(c);
+        // //写入元素
+        // document.getElementById('zz').innerHTML = c;
+    </script>
+</html>

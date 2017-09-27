@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>日历活动</title>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            button{
+                margin-top: 10px;
+                width: 53px;
+                height: 52px;
+                background-color:black;
+                color: white;
+            }
+            .content{
+                text-align:center;
+                float: left;
+                width:200px;
+                height:330px;
+                background-color:   #E8E8E8 ;
+            }
+            .mo{
+                font-size: 30px;
+                margin-top:5px;
+                font-weight: bold;
+            }
+            .month{
+                font-size:20px;
+                letter-spacing: 3px;
+                margin-top:-20px;
+
+            }
+        </style>
+    </head>
+    <body>
+    <div class="content">
+        <button onmouseover="show(this)" onmouseout="redelete(this)">1<br/>JAN</button>
+        <button onmouseover="show(this)" onmouseout="redelete(this)">2<br/>FEB</button>
+        <button onmouseover="show(this)" onmouseout="redelete(this)">3<br/>MAR</button>
+        <button onmouseover="show(this)" onmouseout="redelete(this)">4<br/>APR</button>
+        <button onmouseover="show(this)" onmouseout="redelete(this)">5<br/>MAY</button>
+        <button onmouseover="show(this)" onmouseout="redelete(this)">6<br/>JUN</button>
+        <button onmouseover="show(this)" onmouseout="redelete(this)">7<br/>JUL</button>
+        <button onmouseover="show(this)" onmouseout="redelete(this)">8<br/>AUG</button>
+        <button onmouseover="show(this)" onmouseout="redelete(this)">9<br/>SEP</button>
+        <button onmouseover="show(this)" onmouseout="redelete(this)">10<br/>OCT</button>
+        <button onmouseover="show(this)" onmouseout="redelete(this)" >11<br/>NOV</button>
+        <button onmouseover="show(this)" onmouseout="redelete(this)" >12<br/>DEC</button>
+        <p class="mo"></p>
+        <p class="month"></p>
+    </div>
+    <script>
+        // var month="一 二 三 四 五 六 七 八 九 十 十一 十二";
+        function show(element){
+            element.style.backgroundColor='white';
+            element.style.color='black';
+            element.style.border='1px solid red';
+            var m=element.innerHTML.split('<br>');
+            document.getElementsByClassName('mo')[0].innerHTML=m[0]+'月活动<br />';
+            document.getElementsByClassName('month')[0].innerHTML='这是'+m[0]+'月活动内容';
+
+        }
+        function redelete(element){
+            element.style.backgroundColor='black';
+            element.style.color='white';
+            element.style.border='';
+        }
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+        <form action="index.php?action=addche" method="post">
+        <table cellspacing="0" cellpadding="0">
+            <tr>
+                <td>留言者</td>
+                <td><input type="text" class="inputbox" placeholder="请输入您的昵称" name="author"/></td>
+            </tr>
+            <tr>
+                <td>标题</td>
+                <td><input type="text"  class="inputbox" placeholder="请输入标题" name="title"/></td>
+            </tr>
+            <tr>
+                <td>内容</td>
+                <td>
+                    <textarea  cols="30" rows="10" placeholder="请输入留言内容" name="content"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>心情</td>
+                <td>
+                    <input type="radio" id="1" value="1" name="feel"/>
+                    <label for="1">
+                        <img src="images/1.gif" alt="1" />
+                    </label>
+                    <input type="radio"  id="2" value="2"  name="feel"/>
+                    <label for="2">
+                        <img src="images/2.gif" alt="2" />
+                    </label>
+                    <input type="radio"  id="3" value="3"  name="feel"/>
+                    <label for="3">
+                        <img src="images/3.gif" alt="3" />
+                    </label>
+                    <input type="radio"  id="4" value="4"  name="feel"/>
+                    <label for="4">
+                        <img src="images/4.gif" alt="4" />
+                    </label>
+                    <input type="radio"  id="5" value="5"  name="feel"/>
+                    <label for="5">
+                        <img src="images/5.gif" alt="5" />
+                    </label>
+                    <input type="radio"  id="6" value="6"  name="feel"/>
+                    <label for="6">
+                        <img src="images/6.gif" alt="6" />
+                    </label>
+                    <input type="radio"  id="7" value="7"  name="feel"/>
+                    <label for="7">
+                        <img src="images/7.gif" alt="7" />
+                    </label>
+                    <img src="images/rand.gif" alt="0" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="发布留言" /></td>
+            </tr>
+        </table>
+        </form>

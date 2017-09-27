@@ -1,0 +1,32 @@
+<?php include "common/adminheader.html"?>
+
+
+            <div class="frame">
+                <div class="container">
+                <form action='admin.php?action=add' method="post">
+
+                    <tr>
+                        <label>标题</label>&nbsp;&nbsp;&nbsp;
+                        <td><input type="text" name="title"></td><br><br>
+                    </tr>
+                    <tr>
+                        <label>作者</label>&nbsp;&nbsp;&nbsp;
+                        <td><input type="text" name="author"></td><br><br>
+                    </tr>
+                    <tr>
+                        <label>内容</label>&nbsp;&nbsp;&nbsp;
+                        <td><input type="text" name="content"></td><br><br>
+                    </tr>
+                    <tr>
+                        <label>category_id</label>
+                        <td><input type="text" name="category_id"></td><br><br>
+                    </tr>
+                    <tr>
+                        <input type="submit" value="发布"/></tr>
+
+
+
+                </form>
+                </div>
+            </div>
+<?php include "common/footer.html"?>

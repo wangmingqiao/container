@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    <div>
+         <ul class="nav nav-pills" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade" id="home">
+                我是home
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="profile">我是profile</div>
+            <div role="tabpanel" class="tab-pane fade int acrive" id="messages">我是message</div>
+            <div role="tabpanel" class="tab-pane fade" id="settings">我是setting</div>
+          </div>
+    </div>
+    <script>
+        使用a标签调用tab('show')方法，切换tab
+        $('.nav a').click(function (event) {
+            e.preventDefault();
+            $(this).tab=('show')
+        })
+
+        $('a').on('show.bs.tab',function(event){
+            console.log(event.target);
+            console.log(event.relatedTarget);
+        })
+    </script>
+    </body>
+</html>

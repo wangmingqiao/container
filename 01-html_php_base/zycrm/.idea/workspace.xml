@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bcbe2e4c-62dc-476d-930c-5e727e86d099" name="Default" comment="" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="zycrm" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="action.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/action.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="52.333332">
+              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+              <folding>
+                <element signature="n#home#0;n#!!top" expanded="false" />
+                <element signature="n#customer_info#0;n#!!top" expanded="false" />
+                <element signature="n#customer_allot#0;n#!!top" expanded="false" />
+                <element signature="n#customer_care#0;n#!!top" expanded="false" />
+                <element signature="n#customer_type#0;n#!!top" expanded="false" />
+                <element signature="n#customer_status#0;n#!!top" expanded="false" />
+                <element signature="n#customer_source#0;n#!!top" expanded="false" />
+                <element signature="n#customer_linkrecord#0;n#!!top" expanded="false" />
+                <element signature="n#notic#0;n#!!top" expanded="false" />
+                <element signature="n#login_out#0;n#!!top" expanded="false" />
+                <marker date="1504340915121" expanded="true" signature="273:500" placeholder="SELECT custo..customer_info..." />
+                <marker date="1504340915121" expanded="true" signature="548:736" placeholder="SELECT care_..customer_care..." />
+                <marker date="1504340915121" expanded="true" signature="780:985" placeholder="SELECT link_..customer_linkreord..." />
+                <marker date="1504340915121" expanded="true" signature="1029:1222" placeholder="SELECT notic..notice_info..." />
+                <marker date="1504340915121" expanded="true" signature="1550:1619" placeholder="SELECT count..." />
+                <marker date="1504340915121" expanded="true" signature="1861:2455" placeholder="SELECT custo..customer_info..." />
+                <marker date="1504340915121" expanded="true" signature="2877:2957" placeholder="SELECT sourc..customer_source..." />
+                <marker date="1504340915121" expanded="true" signature="3035:3123" placeholder="SELECT condi..customer_condition..." />
+                <marker date="1504340915121" expanded="true" signature="3200:3273" placeholder="SELECT type_..customer_type..." />
+                <marker date="1504340915121" expanded="true" signature="4066:4116" placeholder="INSERT INTO customer_info..." />
+                <marker date="1504340915121" expanded="true" signature="4693:4739" placeholder="SELECT * FRO..customer_info..." />
+                <marker date="1504340915121" expanded="true" signature="4920:5000" placeholder="SELECT sourc..customer_source..." />
+                <marker date="1504340915121" expanded="true" signature="5086:5174" placeholder="SELECT condi..customer_condition..." />
+                <marker date="1504340915121" expanded="true" signature="5259:5332" placeholder="SELECT type_..customer_type..." />
+                <marker date="1504340915121" expanded="true" signature="6116:6171" placeholder="UPDATE custo..." />
+                <marker date="1504340915121" expanded="true" signature="6754:6807" placeholder="UPDATE custo..." />
+                <marker date="1504340915121" expanded="true" signature="7295:7364" placeholder="SELECT count..." />
+                <marker date="1504340915121" expanded="true" signature="7553:8029" placeholder="SELECT custo..customer_info..." />
+                <marker date="1504340915121" expanded="true" signature="8427:8478" placeholder="select custo..customer_info..." />
+                <marker date="1504340915121" expanded="true" signature="8427:8494" placeholder="select custo..customer_info..." />
+                <marker date="1504340915121" expanded="true" signature="8427:8497" placeholder="select custo..customer_info..." />
+                <marker date="1504340915121" expanded="true" signature="8427:8516" placeholder="select custo..customer_info..." />
+                <marker date="1504340915121" expanded="true" signature="8657:8712" placeholder="SELECT user_..user_info..." />
+                <marker date="1504340915121" expanded="true" signature="9025:9050" placeholder="update custo..." />
+                <marker date="1504340915121" expanded="true" signature="9025:9085" placeholder="update custo..." />
+                <marker date="1504340915121" expanded="true" signature="9025:9114" placeholder="update custo..." />
+                <marker date="1504340915121" expanded="true" signature="9492:9557" placeholder="SELECT count..." />
+                <marker date="1504340915121" expanded="true" signature="9837:10123" placeholder="SELECT care_..customer_care..." />
+                <marker date="1504340915121" expanded="true" signature="10588:10682" placeholder="SELECT custo..customer_info..." />
+                <marker date="1504340915121" expanded="true" signature="11347:11443" placeholder="INSERT INTO customer_care..." />
+                <marker date="1504340915121" expanded="true" signature="11856:11898" placeholder="SELECT * FRO..customer_care..." />
+                <marker date="1504340915121" expanded="true" signature="12128:12222" placeholder="SELECT custo..customer_info..." />
+                <marker date="1504340915121" expanded="true" signature="12888:12958" placeholder="UPDATE custo..." />
+                <marker date="1504340915121" expanded="true" signature="13317:13366" placeholder="UPDATE custo..." />
+                <marker date="1504340915121" expanded="true" signature="13740:13805" placeholder="SELECT count..." />
+                <marker date="1504340915121" expanded="true" signature="14071:14151" placeholder="SELECT type_..customer_type..." />
+                <marker date="1504340915121" expanded="true" signature="14584:14658" placeholder="INSERT INTO customer_type..." />
+                <marker date="1504340915121" expanded="true" signature="15062:15111" placeholder="UPDATE custo..." />
+                <marker date="1504340915121" expanded="true" signature="15462:15538" placeholder="SELECT count..." />
+                <marker date="1504340915121" expanded="true" signature="15729:15841" placeholder="SELECT condi..customer_condition..." />
+                <marker date="1504340915121" expanded="true" signature="16346:16476" placeholder="INSERT INTO customer_condition..." />
+                <marker date="1504340915121" expanded="true" signature="16789:16848" placeholder="UPDATE custo..." />
+                <marker date="1504340915121" expanded="true" signature="17183:17253" placeholder="SELECT count..." />
+                <marker date="1504340915121" expanded="true" signature="17444:17529" placeholder="SELECT sourc..customer_source..." />
+                <marker date="1504340915121" expanded="true" signature="17984:18066" placeholder="INSERT INTO customer_source..." />
+                <marker date="1504340915121" expanded="true" signature="18353:18406" placeholder="UPDATE custo..." />
+                <marker date="1504340915121" expanded="true" signature="18753:18825" placeholder="SELECT count..." />
+                <marker date="1504340915121" expanded="true" signature="19025:19277" placeholder="SELECT recor..customer_info..." />
+                <marker date="1504340915121" expanded="true" signature="19633:19982" placeholder="SELECT custo..customer_info..." />
+                <marker date="1504340915121" expanded="true" signature="20540:20614" placeholder="INSERT INTO customer_linkreord..." />
+                <marker date="1504340915121" expanded="true" signature="21078:21427" placeholder="SELECT custo..customer_info..." />
+                <marker date="1504340915121" expanded="true" signature="21494:21731" placeholder="SELECT info...customer_info..." />
+                <marker date="1504340915121" expanded="true" signature="21494:21732" placeholder="SELECT info...customer_info..." />
+                <marker date="1504340915121" expanded="true" signature="22356:22409" placeholder="UPDATE custo..." />
+                <marker date="1504340915121" expanded="true" signature="22356:22433" placeholder="UPDATE custo..." />
+                <marker date="1504340915121" expanded="true" signature="22356:22435" placeholder="UPDATE custo..." />
+                <marker date="1504340915121" expanded="true" signature="22363:22409" placeholder="INSERT INTO customer_linkreord..." />
+                <marker date="1504340915121" expanded="true" signature="22825:22881" placeholder="UPDATE custo..." />
+                <marker date="1504340915121" expanded="true" signature="23264:23325" placeholder="SELECT count..." />
+                <marker date="1504340915121" expanded="true" signature="23521:23634" placeholder="SELECT user_..user_info..." />
+                <marker date="1504340915121" expanded="true" signature="23521:23647" placeholder="SELECT user_..user_info..." />
+                <marker date="1504340915121" expanded="true" signature="23979:24230" placeholder="SELECT user_..user_info..." />
+                <marker date="1504340915121" expanded="true" signature="24665:24725" placeholder="INSERT INTO user_info..." />
+                <marker date="1504340915121" expanded="true" signature="24665:24783" placeholder="INSERT INTO user_info..." />
+                <marker date="1504340915121" expanded="true" signature="25195:25234" placeholder="SELECT * FRO..user_info..." />
+                <marker date="1504340915121" expanded="true" signature="25347:25596" placeholder="SELECT user_..user_info..." />
+                <marker date="1504340915121" expanded="true" signature="26216:26265" placeholder="UPDATE user_..." />
+                <marker date="1504340915121" expanded="true" signature="26641:26674" placeholder="UPDATE user_..." />
+                <marker date="1504340915121" expanded="true" signature="26641:26677" placeholder="UPDATE user_..." />
+                <marker date="1504340915121" expanded="true" signature="26641:26683" placeholder="UPDATE user_..." />
+                <marker date="1504340915121" expanded="true" signature="26641:26686" placeholder="UPDATE user_..." />
+                <marker date="1504340915121" expanded="true" signature="26641:26688" placeholder="UPDATE user_..." />
+                <marker date="1504340915121" expanded="true" signature="26984:27049" placeholder="SELECT count..." />
+                <marker date="1504340915121" expanded="true" signature="27240:27444" placeholder="SELECT user_..notice_info..." />
+                <marker date="1504340915121" expanded="true" signature="27240:27488" placeholder="SELECT notic..notice_info..." />
+                <marker date="1504340915121" expanded="true" signature="27240:27502" placeholder="SELECT notic..notice_info..." />
+                <marker date="1504340915121" expanded="true" signature="27816:27872" placeholder="SELECT user_..user_info..." />
+                <marker date="1504340915121" expanded="true" signature="28501:28569" placeholder="INSERT INTO notice_info..." />
+                <marker date="1504340915121" expanded="true" signature="28993:29049" placeholder="SELECT user_..user_info..." />
+                <marker date="1504340915121" expanded="true" signature="29166:29492" placeholder="SELECT notic..notice_info..." />
+                <marker date="1504340915121" expanded="true" signature="29166:29498" placeholder="SELECT notic..notice_info..." />
+                <marker date="1504340915121" expanded="true" signature="30079:30132" placeholder="UPDATE user_..." />
+                <marker date="1504340915121" expanded="true" signature="30498:30547" placeholder="UPDATE notic..." />
+                <marker date="1504340915121" expanded="true" signature="30498:30548" placeholder="UPDATE notic..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/Home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="4.6153846">
+              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Common_header.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/template/Common_header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.34642032">
+              <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&lt;div class=&quot;container&quot;&gt; &lt;form class=&quot;form-signin&quot;&gt;&lt;h2 class=&quot;form-signin-heading&quot;&gt;Please sign in&lt;/h2&gt; &lt;label for=&quot;inputEmail&quot; class=&quot;sr-only&quot;&gt;Email address&lt;/label&gt; &lt;input type=&quot;email&quot; id=&quot;inputEmail&quot; class=&quot;form-control&quot; placeholder=&quot;Email address&quot; required autofocus&gt; &lt;label for=&quot;inputPassword&quot; class=&quot;sr-only&quot;&gt;Password&lt;/label&gt; &lt;input type=&quot;password&quot; id=&quot;inputPassword&quot; class=&quot;form-control&quot; placeholder=&quot;Password&quot; required&gt; &lt;div class=&quot;checkbox&quot;&gt; &lt;label&gt; &lt;input type=&quot;checkbox&quot; value=&quot;remember-me&quot;&gt; Remember me &lt;/label&gt; &lt;/div&gt; &lt;button class=&quot;btn btn-lg btn-primary btn-block&quot; type=&quot;submit&quot;&gt;Sign in&lt;/button&gt; &lt;/form&gt; &lt;/div&gt; &lt;!-- /container --&gt;</find>
+      <find>-2</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/static/css/login.css" />
+        <option value="$PROJECT_DIR$/template/Login.php" />
+        <option value="$PROJECT_DIR$/template/tmp.html" />
+        <option value="$PROJECT_DIR$/template/Customer_care.php" />
+        <option value="$PROJECT_DIR$/template/Customer_source.php" />
+        <option value="$PROJECT_DIR$/template/Customer_status.php" />
+        <option value="$PROJECT_DIR$/template/Customer_type.php" />
+        <option value="$PROJECT_DIR$/template/Common_footer.php" />
+        <option value="$PROJECT_DIR$/static/css/home.css" />
+        <option value="$PROJECT_DIR$/template/Customer_info.php" />
+        <option value="$PROJECT_DIR$/common.php" />
+        <option value="$PROJECT_DIR$/template/Customer_info_detail.php" />
+        <option value="$PROJECT_DIR$/template/Customer_link.php" />
+        <option value="$PROJECT_DIR$/template/Customer_link_detail.php" />
+        <option value="$PROJECT_DIR$/template/User_info.php" />
+        <option value="$PROJECT_DIR$/template/User_info_detail.php" />
+        <option value="$PROJECT_DIR$/template/Customer_notic.php" />
+        <option value="$PROJECT_DIR$/template/Home.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/DB.php" />
+        <option value="$PROJECT_DIR$/template/Customer_allot.php" />
+        <option value="$PROJECT_DIR$/template/customer_source_detail.php" />
+        <option value="$PROJECT_DIR$/template/Customer_notice_detail.php" />
+        <option value="$PROJECT_DIR$/template/Customer_allot_detail.php" />
+        <option value="$PROJECT_DIR$/action.php" />
+        <option value="$PROJECT_DIR$/template/Common_header.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="108" />
+    <option name="y" value="49" />
+    <option name="width" value="1707" />
+    <option name="height" value="1100" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zycrm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zycrm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zycrm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zycrm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zycrm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wampstack-5.6.19-0\apache2\htdocs\Lesson\22-project_01\zycrm" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bcbe2e4c-62dc-476d-930c-5e727e86d099" name="Default" comment="" />
+      <created>1503557195304</created>
+      <option name="number" value="Default" />
+      <updated>1503557195304</updated>
+      <workItem from="1503557196895" duration="12678000" />
+      <workItem from="1503570643116" duration="838000" />
+      <workItem from="1503623957161" duration="1261000" />
+      <workItem from="1503729703104" duration="926000" />
+      <workItem from="1503885924054" duration="19323000" />
+      <workItem from="1503932326542" duration="2743000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="37769000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="108" y="49" width="1707" height="1100" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20146075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920793" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988435" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24954352" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/action.php</url>
+          <line>530</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/action.php</url>
+          <line>540</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/action.php</url>
+          <line>591</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/action.php</url>
+          <line>29</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/template/Customer_notic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_source.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_status.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_type.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Common_header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Common_footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="n#home#0;n#!!top" expanded="false" />
+            <element signature="n#customer_info#0;n#!!top" expanded="false" />
+            <element signature="n#customer_allot#0;n#!!top" expanded="false" />
+            <element signature="n#customer_care#0;n#!!top" expanded="false" />
+            <element signature="n#customer_type#0;n#!!top" expanded="false" />
+            <element signature="n#customer_status#0;n#!!top" expanded="false" />
+            <element signature="n#customer_source#0;n#!!top" expanded="false" />
+            <element signature="n#customer_linkrecord#0;n#!!top" expanded="false" />
+            <element signature="n#notic#0;n#!!top" expanded="false" />
+            <element signature="n#login_out#0;n#!!top" expanded="false" />
+            <marker date="1504340915121" expanded="true" signature="273:500" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="548:736" placeholder="SELECT care_..customer_care..." />
+            <marker date="1504340915121" expanded="true" signature="780:985" placeholder="SELECT link_..customer_linkreord..." />
+            <marker date="1504340915121" expanded="true" signature="1029:1222" placeholder="SELECT notic..notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="1550:1619" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="1861:2455" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="2877:2957" placeholder="SELECT sourc..customer_source..." />
+            <marker date="1504340915121" expanded="true" signature="3035:3123" placeholder="SELECT condi..customer_condition..." />
+            <marker date="1504340915121" expanded="true" signature="3200:3273" placeholder="SELECT type_..customer_type..." />
+            <marker date="1504340915121" expanded="true" signature="4066:4116" placeholder="INSERT INTO customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="4693:4739" placeholder="SELECT * FRO..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="4920:5000" placeholder="SELECT sourc..customer_source..." />
+            <marker date="1504340915121" expanded="true" signature="5086:5174" placeholder="SELECT condi..customer_condition..." />
+            <marker date="1504340915121" expanded="true" signature="5259:5332" placeholder="SELECT type_..customer_type..." />
+            <marker date="1504340915121" expanded="true" signature="6116:6171" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="6754:6807" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="7295:7364" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="7553:8029" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="8427:8478" placeholder="select custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="8427:8494" placeholder="select custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="8427:8497" placeholder="select custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="8427:8516" placeholder="select custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="8657:8712" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="9025:9050" placeholder="update custo..." />
+            <marker date="1504340915121" expanded="true" signature="9025:9085" placeholder="update custo..." />
+            <marker date="1504340915121" expanded="true" signature="9025:9114" placeholder="update custo..." />
+            <marker date="1504340915121" expanded="true" signature="9492:9557" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="9837:10123" placeholder="SELECT care_..customer_care..." />
+            <marker date="1504340915121" expanded="true" signature="10588:10682" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="11347:11443" placeholder="INSERT INTO customer_care..." />
+            <marker date="1504340915121" expanded="true" signature="11856:11898" placeholder="SELECT * FRO..customer_care..." />
+            <marker date="1504340915121" expanded="true" signature="12128:12222" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="12888:12958" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="13317:13366" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="13740:13805" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="14071:14151" placeholder="SELECT type_..customer_type..." />
+            <marker date="1504340915121" expanded="true" signature="14584:14658" placeholder="INSERT INTO customer_type..." />
+            <marker date="1504340915121" expanded="true" signature="15062:15111" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="15462:15538" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="15729:15841" placeholder="SELECT condi..customer_condition..." />
+            <marker date="1504340915121" expanded="true" signature="16346:16476" placeholder="INSERT INTO customer_condition..." />
+            <marker date="1504340915121" expanded="true" signature="16789:16848" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="17183:17253" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="17444:17529" placeholder="SELECT sourc..customer_source..." />
+            <marker date="1504340915121" expanded="true" signature="17984:18066" placeholder="INSERT INTO customer_source..." />
+            <marker date="1504340915121" expanded="true" signature="18353:18406" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="18753:18825" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="19025:19277" placeholder="SELECT recor..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="19633:19982" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="20540:20614" placeholder="INSERT INTO customer_linkreord..." />
+            <marker date="1504340915121" expanded="true" signature="21078:21427" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="21494:21731" placeholder="SELECT info...customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="21494:21732" placeholder="SELECT info...customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="22356:22409" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="22356:22433" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="22356:22435" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="22363:22409" placeholder="INSERT INTO customer_linkreord..." />
+            <marker date="1504340915121" expanded="true" signature="22825:22881" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="23264:23325" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="23521:23634" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="23521:23647" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="23979:24230" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="24665:24725" placeholder="INSERT INTO user_info..." />
+            <marker date="1504340915121" expanded="true" signature="24665:24783" placeholder="INSERT INTO user_info..." />
+            <marker date="1504340915121" expanded="true" signature="25195:25234" placeholder="SELECT * FRO..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="25347:25596" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="26216:26265" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="26641:26674" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="26641:26677" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="26641:26683" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="26641:26686" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="26641:26688" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="26984:27049" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="27240:27444" placeholder="SELECT user_..notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="27240:27488" placeholder="SELECT notic..notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="27240:27502" placeholder="SELECT notic..notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="27816:27872" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="28501:28569" placeholder="INSERT INTO notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="28993:29049" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="29166:29492" placeholder="SELECT notic..notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="29166:29498" placeholder="SELECT notic..notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="30079:30132" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="30498:30547" placeholder="UPDATE notic..." />
+            <marker date="1504340915121" expanded="true" signature="30498:30548" placeholder="UPDATE notic..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="83" selection-start-line="8" selection-start-column="83" selection-end-line="8" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/User_info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_link.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_notic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_source.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_status.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_type.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Common_header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Common_footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="n#home#0;n#!!top" expanded="false" />
+            <element signature="n#customer_info#0;n#!!top" expanded="false" />
+            <element signature="n#customer_allot#0;n#!!top" expanded="false" />
+            <element signature="n#customer_care#0;n#!!top" expanded="false" />
+            <element signature="n#customer_type#0;n#!!top" expanded="false" />
+            <element signature="n#customer_status#0;n#!!top" expanded="false" />
+            <element signature="n#customer_source#0;n#!!top" expanded="false" />
+            <element signature="n#customer_linkrecord#0;n#!!top" expanded="false" />
+            <element signature="n#notic#0;n#!!top" expanded="false" />
+            <element signature="n#login_out#0;n#!!top" expanded="false" />
+            <marker date="1504340915121" expanded="true" signature="273:500" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="548:736" placeholder="SELECT care_..customer_care..." />
+            <marker date="1504340915121" expanded="true" signature="780:985" placeholder="SELECT link_..customer_linkreord..." />
+            <marker date="1504340915121" expanded="true" signature="1029:1222" placeholder="SELECT notic..notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="1550:1619" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="1861:2455" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="2877:2957" placeholder="SELECT sourc..customer_source..." />
+            <marker date="1504340915121" expanded="true" signature="3035:3123" placeholder="SELECT condi..customer_condition..." />
+            <marker date="1504340915121" expanded="true" signature="3200:3273" placeholder="SELECT type_..customer_type..." />
+            <marker date="1504340915121" expanded="true" signature="4066:4116" placeholder="INSERT INTO customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="4693:4739" placeholder="SELECT * FRO..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="4920:5000" placeholder="SELECT sourc..customer_source..." />
+            <marker date="1504340915121" expanded="true" signature="5086:5174" placeholder="SELECT condi..customer_condition..." />
+            <marker date="1504340915121" expanded="true" signature="5259:5332" placeholder="SELECT type_..customer_type..." />
+            <marker date="1504340915121" expanded="true" signature="6116:6171" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="6754:6807" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="7295:7364" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="7553:8029" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="8427:8478" placeholder="select custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="8427:8494" placeholder="select custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="8427:8497" placeholder="select custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="8427:8516" placeholder="select custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="8657:8712" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="9025:9050" placeholder="update custo..." />
+            <marker date="1504340915121" expanded="true" signature="9025:9085" placeholder="update custo..." />
+            <marker date="1504340915121" expanded="true" signature="9025:9114" placeholder="update custo..." />
+            <marker date="1504340915121" expanded="true" signature="9492:9557" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="9837:10123" placeholder="SELECT care_..customer_care..." />
+            <marker date="1504340915121" expanded="true" signature="10588:10682" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="11347:11443" placeholder="INSERT INTO customer_care..." />
+            <marker date="1504340915121" expanded="true" signature="11856:11898" placeholder="SELECT * FRO..customer_care..." />
+            <marker date="1504340915121" expanded="true" signature="12128:12222" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="12888:12958" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="13317:13366" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="13740:13805" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="14071:14151" placeholder="SELECT type_..customer_type..." />
+            <marker date="1504340915121" expanded="true" signature="14584:14658" placeholder="INSERT INTO customer_type..." />
+            <marker date="1504340915121" expanded="true" signature="15062:15111" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="15462:15538" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="15729:15841" placeholder="SELECT condi..customer_condition..." />
+            <marker date="1504340915121" expanded="true" signature="16346:16476" placeholder="INSERT INTO customer_condition..." />
+            <marker date="1504340915121" expanded="true" signature="16789:16848" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="17183:17253" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="17444:17529" placeholder="SELECT sourc..customer_source..." />
+            <marker date="1504340915121" expanded="true" signature="17984:18066" placeholder="INSERT INTO customer_source..." />
+            <marker date="1504340915121" expanded="true" signature="18353:18406" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="18753:18825" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="19025:19277" placeholder="SELECT recor..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="19633:19982" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="20540:20614" placeholder="INSERT INTO customer_linkreord..." />
+            <marker date="1504340915121" expanded="true" signature="21078:21427" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="21494:21731" placeholder="SELECT info...customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="21494:21732" placeholder="SELECT info...customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="22356:22409" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="22356:22433" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="22356:22435" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="22363:22409" placeholder="INSERT INTO customer_linkreord..." />
+            <marker date="1504340915121" expanded="true" signature="22825:22881" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="23264:23325" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="23521:23634" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="23521:23647" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="23979:24230" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="24665:24725" placeholder="INSERT INTO user_info..." />
+            <marker date="1504340915121" expanded="true" signature="24665:24783" placeholder="INSERT INTO user_info..." />
+            <marker date="1504340915121" expanded="true" signature="25195:25234" placeholder="SELECT * FRO..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="25347:25596" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="26216:26265" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="26641:26674" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="26641:26677" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="26641:26683" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="26641:26686" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="26641:26688" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="26984:27049" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="27240:27444" placeholder="SELECT user_..notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="27240:27488" placeholder="SELECT notic..notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="27240:27502" placeholder="SELECT notic..notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="27816:27872" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="28501:28569" placeholder="INSERT INTO notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="28993:29049" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="29166:29492" placeholder="SELECT notic..notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="29166:29498" placeholder="SELECT notic..notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="30079:30132" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="30498:30547" placeholder="UPDATE notic..." />
+            <marker date="1504340915121" expanded="true" signature="30498:30548" placeholder="UPDATE notic..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="83" selection-start-line="8" selection-start-column="83" selection-end-line="8" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/User_info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_source.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_type.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_status.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/mumu/PHP 17 PHP会话控制/资料及代码/17.3.2 Cookie的操作/code/one.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_link.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.923077">
+          <caret line="31" column="117" selection-start-line="31" selection-start-column="117" selection-end-line="31" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d8915994-8acd-4c66-a4df-df8b2ce8c04d/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/509e1651-63b3-4b51-96ac-7407881714c4/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/51a5eeb3-b6fc-4550-ae91-194f7a6d3e23/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/User_info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34532374">
+          <caret line="7" column="10" selection-start-line="1" selection-start-column="0" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_care.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.307693">
+          <caret line="38" column="33" selection-start-line="28" selection-start-column="9" selection-end-line="38" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/customer_source_detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14888337">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/User_info_detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55831265">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="29" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_care_detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4888338">
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_link_detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.0794044">
+          <caret line="58" column="76" selection-start-line="58" selection-start-column="76" selection-end-line="58" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_allot_detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44665012">
+          <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Common_footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.034642033">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_allot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_notic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.692308">
+          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.461538">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4849885">
+          <caret line="79" column="81" selection-start-line="79" selection-start-column="59" selection-end-line="79" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/tmp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55427253">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16859123">
+          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_notice_detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.6923075">
+          <caret line="13" column="0" selection-start-line="11" selection-start-column="8" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Customer_info_detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.461538">
+          <caret line="14" column="61" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.06928407">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.6153846">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="52.333332">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding>
+            <element signature="n#home#0;n#!!top" expanded="false" />
+            <element signature="n#customer_info#0;n#!!top" expanded="false" />
+            <element signature="n#customer_allot#0;n#!!top" expanded="false" />
+            <element signature="n#customer_care#0;n#!!top" expanded="false" />
+            <element signature="n#customer_type#0;n#!!top" expanded="false" />
+            <element signature="n#customer_status#0;n#!!top" expanded="false" />
+            <element signature="n#customer_source#0;n#!!top" expanded="false" />
+            <element signature="n#customer_linkrecord#0;n#!!top" expanded="false" />
+            <element signature="n#notic#0;n#!!top" expanded="false" />
+            <element signature="n#login_out#0;n#!!top" expanded="false" />
+            <marker date="1504340915121" expanded="true" signature="273:500" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="548:736" placeholder="SELECT care_..customer_care..." />
+            <marker date="1504340915121" expanded="true" signature="780:985" placeholder="SELECT link_..customer_linkreord..." />
+            <marker date="1504340915121" expanded="true" signature="1029:1222" placeholder="SELECT notic..notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="1550:1619" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="1861:2455" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="2877:2957" placeholder="SELECT sourc..customer_source..." />
+            <marker date="1504340915121" expanded="true" signature="3035:3123" placeholder="SELECT condi..customer_condition..." />
+            <marker date="1504340915121" expanded="true" signature="3200:3273" placeholder="SELECT type_..customer_type..." />
+            <marker date="1504340915121" expanded="true" signature="4066:4116" placeholder="INSERT INTO customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="4693:4739" placeholder="SELECT * FRO..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="4920:5000" placeholder="SELECT sourc..customer_source..." />
+            <marker date="1504340915121" expanded="true" signature="5086:5174" placeholder="SELECT condi..customer_condition..." />
+            <marker date="1504340915121" expanded="true" signature="5259:5332" placeholder="SELECT type_..customer_type..." />
+            <marker date="1504340915121" expanded="true" signature="6116:6171" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="6754:6807" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="7295:7364" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="7553:8029" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="8427:8478" placeholder="select custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="8427:8494" placeholder="select custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="8427:8497" placeholder="select custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="8427:8516" placeholder="select custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="8657:8712" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="9025:9050" placeholder="update custo..." />
+            <marker date="1504340915121" expanded="true" signature="9025:9085" placeholder="update custo..." />
+            <marker date="1504340915121" expanded="true" signature="9025:9114" placeholder="update custo..." />
+            <marker date="1504340915121" expanded="true" signature="9492:9557" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="9837:10123" placeholder="SELECT care_..customer_care..." />
+            <marker date="1504340915121" expanded="true" signature="10588:10682" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="11347:11443" placeholder="INSERT INTO customer_care..." />
+            <marker date="1504340915121" expanded="true" signature="11856:11898" placeholder="SELECT * FRO..customer_care..." />
+            <marker date="1504340915121" expanded="true" signature="12128:12222" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="12888:12958" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="13317:13366" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="13740:13805" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="14071:14151" placeholder="SELECT type_..customer_type..." />
+            <marker date="1504340915121" expanded="true" signature="14584:14658" placeholder="INSERT INTO customer_type..." />
+            <marker date="1504340915121" expanded="true" signature="15062:15111" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="15462:15538" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="15729:15841" placeholder="SELECT condi..customer_condition..." />
+            <marker date="1504340915121" expanded="true" signature="16346:16476" placeholder="INSERT INTO customer_condition..." />
+            <marker date="1504340915121" expanded="true" signature="16789:16848" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="17183:17253" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="17444:17529" placeholder="SELECT sourc..customer_source..." />
+            <marker date="1504340915121" expanded="true" signature="17984:18066" placeholder="INSERT INTO customer_source..." />
+            <marker date="1504340915121" expanded="true" signature="18353:18406" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="18753:18825" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="19025:19277" placeholder="SELECT recor..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="19633:19982" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="20540:20614" placeholder="INSERT INTO customer_linkreord..." />
+            <marker date="1504340915121" expanded="true" signature="21078:21427" placeholder="SELECT custo..customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="21494:21731" placeholder="SELECT info...customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="21494:21732" placeholder="SELECT info...customer_info..." />
+            <marker date="1504340915121" expanded="true" signature="22356:22409" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="22356:22433" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="22356:22435" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="22363:22409" placeholder="INSERT INTO customer_linkreord..." />
+            <marker date="1504340915121" expanded="true" signature="22825:22881" placeholder="UPDATE custo..." />
+            <marker date="1504340915121" expanded="true" signature="23264:23325" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="23521:23634" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="23521:23647" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="23979:24230" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="24665:24725" placeholder="INSERT INTO user_info..." />
+            <marker date="1504340915121" expanded="true" signature="24665:24783" placeholder="INSERT INTO user_info..." />
+            <marker date="1504340915121" expanded="true" signature="25195:25234" placeholder="SELECT * FRO..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="25347:25596" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="26216:26265" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="26641:26674" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="26641:26677" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="26641:26683" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="26641:26686" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="26641:26688" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="26984:27049" placeholder="SELECT count..." />
+            <marker date="1504340915121" expanded="true" signature="27240:27444" placeholder="SELECT user_..notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="27240:27488" placeholder="SELECT notic..notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="27240:27502" placeholder="SELECT notic..notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="27816:27872" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="28501:28569" placeholder="INSERT INTO notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="28993:29049" placeholder="SELECT user_..user_info..." />
+            <marker date="1504340915121" expanded="true" signature="29166:29492" placeholder="SELECT notic..notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="29166:29498" placeholder="SELECT notic..notice_info..." />
+            <marker date="1504340915121" expanded="true" signature="30079:30132" placeholder="UPDATE user_..." />
+            <marker date="1504340915121" expanded="true" signature="30498:30547" placeholder="UPDATE notic..." />
+            <marker date="1504340915121" expanded="true" signature="30498:30548" placeholder="UPDATE notic..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Common_header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34642032">
+          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

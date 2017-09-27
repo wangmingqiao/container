@@ -1,0 +1,60 @@
+1,统计每个部门有多少人
++---------+------------+----------+
+| dept_no | dept_count | d_name   |
++---------+------------+----------+
+|      10 |          2 | kuaiji   |
+|      20 |          3 | yanjiu   |
+|      30 |          4 | xiaoshou |
++---------+------------+----------+
+SELECT dept_no,COUNT(dept_no) as dept_num,d_name FROM em INNER JOIN dept on em.dept_no=dept.d_no GROUP BY dept_no;
+
+2,查询每个部门平均薪水是多少
+| dept_no | avg_salary | d_name   |
++---------+------------+----------+
+|      10 | 3725.0000  | kuaiji   |
+|      20 | 2358.3333  | yanjiu   |
+|      30 | 1637.5000  | xiaoshou |
++---------+------------+----------+
+SELECT dept_no,avg(e_salary) as avg_salary,d_name from em INNER JOIN dept on em.dept_no=dept.d_no GROUP BY dept_no;
+
+
+3,查询每个部们中薪水最高的员工的个人信息
++------+--------+----------+---------+---------+----------+------------+
+| e_no | e_name | e_gender | dept_no | e_job   | e_salary | hireDate   |
++------+--------+----------+---------+---------+----------+------------+
+| 1006 | blake  | f        |      30 | manager |     2850 | 1997-02-15 |
+| 1008 | scott  | m        |      20 | yanjiu  |     3000 | 2003-05-12 |
+| 1009 | king   | f        |      10 | zongcai |     5000 | 1995-01-01 |
++------+--------+----------+---------+---------+----------+------------+
+SELECT * FROM em WHERE e_salary in (SELECT max(e_salary) FROM em,dept   where dept_no = d_no group by d_name) ORDER BY dept_no DESC;
+
+
+4,查询在深圳工作的员工信息
+结果1:
++------+--------+----------+---------+----------+----------+------------+------------+
+| e_no | e_name | e_gender | dept_no | e_job    | e_salary | hireDate   | d_location |
++------+--------+----------+---------+----------+----------+------------+------------+
+| 1005 | martin | m        |      30 | xiaoshou |     1250 | 2001-06-12 | shenzhen   |
+| 1006 | blake  | f        |      30 | manager  |     2850 | 1997-02-15 | shenzhen   |
+| 1010 | turner | f        |      30 | xiaoshou |     1500 | 1997-10-12 | shenzhen   |
+| 1012 | james  | f        |      30 | yuangong |      950 | 2008-06-15 | shenzhen   |
++------+--------+----------+---------+----------+----------+------------+------------+
+结果2:
++------+--------+----------+---------+----------+----------+------------+
+| e_no | e_name | e_gender | dept_no | e_job    | e_salary | hireDate   |
++------+--------+----------+---------+----------+----------+------------+
+| 1005 | martin | m        |      30 | xiaoshou |     1250 | 2001-06-12 |
+| 1006 | blake  | f        |      30 | manager  |     2850 | 1997-02-15 |
+| 1010 | turner | f        |      30 | xiaoshou |     1500 | 1997-10-12 |
+| 1012 | james  | f        |      30 | yuangong |      950 | 2008-06-15 |
++------+--------+----------+---------+----------+----------+------------+
+SELECT * from em INNER JOIN dept on em.dept_no=dept.d_no and d_location='shenzhen';
+
+
+5,查询jones所在的部门和部门的地址信息
++----------+------------+
+| d_name   | d_location |
++----------+------------+
+| xiaoshou | shenzhen   |
++----------+------------+
+SELECT d_name,d_location FROM em INNER JOIN dept on em.dept_no=dept.d_no WHERE e_name='jones' GROUP BY dept_no;

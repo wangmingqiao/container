@@ -1,0 +1,7 @@
+学习目标
+1.flex-box 弹性盒子
+2.git
+
+要求：
+1.熟练掌握flex-box的各种布局方式
+2.git熟练掌握.jit 上传 下载 github相关操作

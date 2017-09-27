@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>选项卡</title>
+        <style>
+            button{
+                border:none;
+                background-color: yellow;
+            }
+            .active{
+                /* 选中的css */
+                background-color:red;
+            }
+            div{
+                /* 显示和隐藏 */
+                display:none;
+                background-color:cyan;
+                color: red;
+                width: 80%;
+            }
+        </style>
+    </head>
+    <body>
+    <button class="active">栏目一</button>
+    <button>栏目二</button>
+    <button>栏目三</button>
+    <button>栏目四</button>
+    <div style="display:block;">内容1<br/>内容1<br/>内容1<br/>内容1<br/></div>
+    <div>内容2<br/>内容2<br/>内容2<br/>内容2<br/></div>
+    <div>内容3<br/>内容3<br/>内容3<br/>内容3<br/></div>
+    <div>内容4<br/>内容4<br/>内容4<br/>内容4<br/></div>
+    </body>
+    <script>
+        // 获取按钮元素的对象
+        var buttons=document.getElementsByTagName('button');
+        var divs=document.getElementsByTagName('div');
+
+        for (var i = 0; i < buttons.length; i++) {
+            // 记录button位置
+            buttons[i].index=i;
+            // 使用循环给按钮添加绑定事件
+            buttons[i].onclick=function(){
+
+                // 还原状态
+                for (var i = 0; i < divs.length; i++) {
+                    divs[i].style.display='none';
+                    buttons[i].className='';
+                }
+                // 让按钮的状态改变
+                this.className='active';
+                // 让div显示
+                divs[this.index].style.display='block';
+            }
+        }
+    </script>
+</html>

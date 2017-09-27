@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>js事件</title>
+        <style>
+            h1{
+                background-color: red;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+    <h1 onclick="click_fun(this)">我是标签</h1>
+    <h1 onmouseover="mouseover_fun(this)" onmouseout="mouseover_fun(this)">我是标签</h1>
+    <p id="p_id">我是p标签</p>
+    <input type="text" id="input_id" />
+    <form action="http://www.baidu.com">
+        <input type="text" id="f_input" />
+    </form>
+    <script>
+        // js事件
+        // 鼠标事件
+        // 事件的绑定方式一：以元素属性的形式将js方法和标签绑定
+        function click_fun(elment){
+            elment.innerHTML='鼠标点击了';
+        }
+        function mouseover_fun(elment){
+            if (element.style.background=='blue'){
+                element.style.background='red';
+            }else{
+                elment.style.background='blue';
+            }
+            element.innerHTML='鼠标移动过来了';
+        }
+        var element=document.getElementById('p_id');
+        element.onclick=function(element){
+            //可以直接在匿名函数中使用this表示当前元素
+            element.innerHTML='ppppppppppp';
+            alert('p元素');
+        };
+        element.onmouseover=function(){
+            this.style.background='red';
+        }
+        //键盘事件
+        document.getElementById('input_id').onkeyup=function(){
+            this.value=this.value.toUpperCase();
+        }
+        document.getElementById('f_input').onblur=function(){
+            this.style.border='pink solid 2px';
+        }
+        document.getElementById('f_input').onfocus=function(){
+            this.style.border='';
+        }
+        alert(document.forms[0].action);
+
+    </script>
+    </body>
+</html>

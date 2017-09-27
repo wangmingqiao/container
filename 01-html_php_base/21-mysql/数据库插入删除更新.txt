@@ -1,0 +1,29 @@
+插入单条数据
+insert into [表名](字段1，字段2) value (字段1的值，字段2的值)
+insert into test_a(num) value (1);
+
+insert into [表名] values (字段值1，字段值2);[values里面的内容，必须和表字段的数量和位置保持一致]
+insert into test_a values (2);
+
+
+插入多条数据
+insert into [表名](字段1，字段2) value (一条字段1的值，一条字段2的值)，(二条字段1的值，二条字段2的值)；
+insert into test_a(num) value(3),(4);
+
+
+insert into [表名] values (字段值1，字段值2)，(字段值1，字段值2)，(字段值1，字段值2);
+insert into test_a values (5),(6);
+
+更新 update
+update [表名] set 字段1=新值1，字段2=新值2 where 条件[定位到数据的条件]
+update test_a set num=7 where num=1;
+
+删除delete
+delete from [表名] where 条件[定位到数据的条件];
+delete from test_a where num =7;
+
+添加视图
+create view em_view as select e_name,d_name from em,dept where em.dept_no=dept.d_no;
+
+修改视图字段名
+create or replace view em_view(e,d) as select e_name,d_name from em,dept where em.dept_no=dept.d_no;
