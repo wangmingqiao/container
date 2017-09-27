@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>风车</title>
+	<style>
+		body{
+			padding: 0px;
+			margin: 0px;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			overflow: hidden;
+		}
+		.main{
+			position:relative; 
+			width: 1800px;
+			height: 700px;
+			min-width: 1800px;
+			background-image: url('caodi.png');
+			background-size: contain;
+		}
+		.a{
+			position:absolute;
+			left:435px;
+			top: 145px;
+			width: 350px;
+			height: 350px;
+			background-image: url('fengche.png');
+			background-size: contain;
+			animation: one 2s infinite linear;
+
+		}
+		.b{
+			position:absolute;
+			left: 845px;
+			top: 420px;
+			width: 150px;
+			height: 150px;
+			background-image: url('fengche.png');
+			background-size: contain;
+			animation: one 2s infinite linear;
+
+
+		}
+		.c{
+			position:absolute;
+			left: 1090px;
+			top: 345px;
+			width: 180px;
+			height: 180px;
+			background-image: url('fengche.png');
+			background-size: contain;
+			animation: one 2s infinite linear;
+		}
+		@keyframes one{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(360deg);}
+		}
+		#div:hover{
+			animation: one 0.5s infinite linear;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="a" id="div"></div>
+		<div class="b" id="div"></div>
+		<div class="c" id="div"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<?php
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>博客</title>
+	<style>
+	body{
+		padding: 0px;
+		margin:0px;
+		display: flex;
+	}
+	div{
+		/*border: 1px black solid;*/
+		margin:10px;
+	}
+	h4.tou{
+		/*文本缩进*/
+		/*text-indent: 50px;*/
+		/*设置行高*/
+		line-height:200%;
+		/*小写转换成大写*/
+		/*text-transform:uppercase;*/
+		font-style: italic;
+		margin-top: 5px;
+		text-align: left;
+		/*设置字符间距*/
+		letter-spacing: 2px;
+	}
+	h4.wei{
+		color: purple;
+		margin-top: 5px;
+		text-align: center;
+	}
+	#a{
+		background-image: url('2.jpg');
+		width: 100%;
+		height: 950px;
+	}
+	nav{
+		width: 600px;
+		height: 30px;
+		background-color: #D0D0D0;
+	}
+	li{
+		/*字体加粗*/
+		font-weight:bold;
+		/*向左浮动方式显示水平导航栏*/
+		float: left;
+		/*内联方式显示水平导航栏*/
+		/*display:inline;*/
+		list-style: none;
+		font-size: 20px;
+		padding-left: 50px;
+		padding-top: 5px;
+		text-align: center;
+	}
+	a{
+		padding: 10px;
+		color: 	#996633;
+		text-decoration: none;
+	}
+	a:hover{
+		color: red;
+	}
+	.container{
+		width: 1400px;
+		height: 1080px;
+		margin: 0px auto;
+	}
+	.header{
+		margin:0px auto;
+		width: 1280px;
+		height: 170px;
+	}
+	.sideBar{
+		float: left;
+		width: 300px;
+		height: 600px;
+	}
+	.content{
+		float: left;
+		width: 728px;
+		height: 600px;
+	}
+	.footer{
+		clear: both;
+		margin:0px auto;
+		width: 1280px;
+		height: 150px;
+		text-align: center;
+	}
+	.a{
+		/*background-color:#E0E0E0   ;*/
+		width: 270px;
+		height:270px;
+		border: 1px black solid;
+	}
+	.b{
+		margin-top: -1px;
+		margin-left: 0px;
+		padding-left: 5px;
+		padding-top: 5px;
+		background-color: #D0D0D0;
+		width: 265px;
+		height: 30px;
+		border: 1px black solid;
+	}
+	.c{
+		padding-top: -5px;
+		border: 1px black solid;
+		width: 700px;
+		height: 570px;
+	}
+	.d{
+		border: 1px black solid;
+		margin-top: 0px;
+		margin-left: 0px;
+		background-color: #D0D0D0;
+		width: 700px;
+		height: 30px;
+	}
+	.e{
+		background-color:#D0D0D0 ;
+	}
+	.f{
+		border: 1px black solid;
+		width: 270px;
+		height: 190px;
+	}
+	/*.g{
+		background-image: url('4.jpg');
+		background:-repeat:no-repeat;
+		background-position: left center;
+	}*/
+	.g{
+
+		/*文本缩进*/
+		/*text-indent: 50px;*/
+		/*设置行高*/
+		line-height:200%;
+		/*小写转换成大写*/
+		/*text-transform:uppercase;*/
+		font-style: italic;
+		margin-top: 5px;
+		text-align: left;
+		/*设置字符间距*/
+		letter-spacing: 2px;
+		/*content: url('4.jpg');*/
+		background-image: url(4.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	</style>
+</head>
+<body>
+	<div id="a"><img src="4.jpg" width="70px" height="70px">
+		<div class="container">
+			<div class="header">
+				<h1>鹿晗博客</h1><h4 class="tou">http://www.lhblog.com</h4>
+				<nav>
+					<ul>
+						<li><a href="">首页</a></li>
+						<li><a href="">博客</a></li>
+						<li><a href="">文章</a></li>
+						<li><a href="">帮助</a></li>
+					</ul>
+				</nav>
+
+			</div>
+			<div class="sideBar">
+				<div class="a">
+					<div class="b"><h4 class="tou">个人资料</h4></div>
+					<div><img src="http://i0.hdslb.com/video/d7/d7d92bc8ef0d33bef054b1e9b09c523e.jpg" width="250px" height="180px"></div>
+					<div class="b"><h4 class="wei">鹿&nbsp;&nbsp;&nbsp;晗</h4></div>
+				</div>
+				<div class="a">
+					<div class="b"><h4 class="tou">博客文章</h4></div>
+					<div>
+						<h3><a href="">HTML简介1</a></h3>
+						<h3><a href="">HTML简介2</a></h3>
+						<h3><a href="">HTML简介3</a></h3>
+						<h3><a href="">HTML简介4</a></h3>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="c">
+					<div class="d"><h4 class="tou">HTML</h4></div>
+					<div class="e"><h3>HTML由来</h3><br><h4 class="g">&nbsp;&nbsp;万维网上的一个超媒体文档称之为一个页面（外语：page）。作为一个组织或者个人在万维网上放置开始点的页面称为主页（外语：Homepage）或首页，主页中通常包括有指向其他相关页面或其他节点的指针（超级链接），所谓超级链接，就是一种统一资源定位器（Uniform Resource Locator，外语缩写：URL）指针，通过激活（点击）它，可使浏览器方便地获取新的网页。这也是HTML获得广泛应用的最重要的原因之一。在逻辑上将视为一个整体的一系列页面的有机集合称为网站（Website或Site）。超级文本标记语言（英文缩写：HTML）是为“网页创建和其它可在网页浏览器中看到的信息”设计的一种标记语言。<br>&nbsp;&nbsp;网页的本质就是超级文本标记语言，通过结合使用其他的Web技术（如：脚本语言、公共网关接口、组件等），可以创造出功能强大的网页。因而，超级文本标记语言是万维网（Web）编程的基础，也就是说万维网是建立在超文本基础之上的。超级文本标记语言之所以称为超文本标记语言，是因为文本中包含了所谓“超级链接”点。</h4></div>
+				</div>
+			</div>
+			<div class="sideBar">
+				<div class="f">
+					<div class="b"><h4 class="tou">我的好友</h4></div>
+					<h4 >&nbsp;L鹿晗H<br><br>&nbsp;L鹿晗H<br><br>&nbsp;L鹿晗H<br><br>&nbsp;L鹿晗H<br><br></h4>
+				</div>
+				<div class="f">
+					<div class="b"><h4 class="tou">友情链接</h4></div>
+					<h4>&nbsp;鹿晗的微博<br><br>&nbsp;鹿晗的微博<br><br>&nbsp;鹿晗的微博<br><br>&nbsp;鹿晗的微博<br><br></h4>
+				</div>
+				<div class="f">
+					<div class="b"><h4 class="tou">访客统计</h4></div>
+					<h4>&nbsp;总共访问量25133<br><br>&nbsp;今日访问量25</h4>
+				</div>
+			</div>
+			<div class="footer"><h2>耿直Boy请进鹿晗的博客，喜欢鹿晗的请举手<br>Copyright@  版权所有  王明巧所制</h2></div>
+		</div>
+	</div>
+	<?php
+
+	?>
+</body>
+</html>

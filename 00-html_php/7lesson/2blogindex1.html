@@ -1,0 +1,177 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>我的blog</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                /* 文本居中 */
+                text-align:center;
+                /* 字体大小 */
+                font-size:13px;
+                background-image:url('1.jpg');
+                background-size:cover;
+            }
+            div{
+               /*  border:solid 1px red; */
+                /* background-color:yellow; */
+            }
+            /* 整体容器设置样式 */
+            .container{
+                width:1500px;
+                /* 居中 */
+                margin:0 auto;
+            }
+            /* 修改头部信息 */
+            .header{
+                text-align:left;
+            }
+            /* 导航样式 */
+            .navBar{
+                margin:0;
+                padding:0;
+                height:50px;
+            }
+            .navBar li{
+                /* 去掉样式 */
+                list-style-type: none;
+                /* 浮动 */
+                float:left;
+                width:100px;
+                /* 背景 */
+                background-color:black;
+                /* 字体大小 */
+                font-size:20px;
+                /* 内边距 */
+                padding:5px;
+
+            }
+            .navBar li a{
+                /* 字体颜色 */
+                color:white;
+                /* 文本修饰 */
+                text-decoration:none;
+            }
+            .navBar li a:hover{
+                color:red;
+            }
+            /* 内容布局 */
+            /* 左侧边 */
+            .leftSide{
+                float:left;
+                width:290px;
+                /* height:500px; */
+            }
+            .main{
+                float:left;
+                width:900px;
+                /* height:500px; */
+                margin:0px 10px;
+            }
+            .rightSide{
+                float:left;
+                width:290px;
+                /* height:500px; */
+            }
+            /* 小面板样式 */
+            .frame{
+                width:100%;
+                background-color:yellow;
+                border:solid 1px red;
+                margin-bottom: 10px;
+            }
+            .title{
+                background-color:pink;
+                font-weight:bold;
+                font-size:20px;
+                padding:5px;
+            }
+            .list{
+                list-style-type:none;
+                padding:5px;
+                margin:0px;
+            }
+            .list li{
+                list-style-type:none;
+                /* 下划线 */
+                border-bottom:dotted 1px red ;
+            }
+            .footer{
+                clear:both;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>我的blog</h1>
+                <p><a href="#">http://www.php7.com</a></p>
+            </div>
+            <div class="content">
+                <div class="navBar">
+                    <ul>
+                        <li><a href="#">导航1</a></li>
+                        <li><a href="#">导航2</a></li>
+                        <li><a href="#">导航3</a></li>
+                        <li><a href="#">导航4</a></li>
+                    </ul>
+                </div>
+                <div class="leftSide">
+                    <div class="frame">
+                        <div class="title">个人信息</div>
+                        <p>我的个人简介</p>
+                    </div>
+                    <div class="frame">
+                        <div class="title">博客文章</div>
+                        <ul class="list">
+                            <li>列表1</li>
+                            <li>列表2</li>
+                            <li>列表3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="frame">
+                        <div class="title">博客文章</div>
+                        <p>我的个人简介</p>
+                    </div>
+                    <div class="frame">
+                        <div class="title"><h1>正文信息</h1>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="rightSide">
+                    <div class="frame">
+                        <div class="title">我的好友</div>
+                        <ul class="list">
+                            <li>列表1</li>
+                            <li>列表2</li>
+                            <li>列表3</li>
+                        </ul>
+                    </div><div class="frame">
+                        <div class="title">友情链接</div>
+                        <ul class="list">
+                            <li>列表1</li>
+                            <li>列表2</li>
+                            <li>列表3</li>
+                        </ul>
+                    </div><div class="frame">
+                        <div class="title">访客统计</div>
+                        <ul class="list">
+                            <li>列表1</li>
+                            <li>列表2</li>
+                            <li>列表3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>blog 意见反馈 电话：4008203</p>
+                <p>简介|关于我们|广告服务|联系我们</p>
+                <p>PHP公司版权所有</p>
+            </div>
+        </div>
+    </body>
+</html>

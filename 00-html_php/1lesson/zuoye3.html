@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>风车动画旋转</title>
+	<style>
+		img{
+			position:absolute;
+		}
+		@keyframes one{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(360deg);}
+		}
+		.a{
+			margin-top:100px;
+			margin-left: 380px;
+			animation: one 2s infinite linear;
+		}
+		.b{
+			margin-top: 410px;
+			margin-left: 810px;
+			animation: one 2s infinite linear;
+		}
+		.c{
+			margin-top: 280px;
+			margin-left: 985px;
+			animation: one 2s infinite linear;
+		}
+		}
+	</style>
+</head>
+<body>
+  <div>
+     <img src="caodi.png" width="90%">
+  </div>
+  <img class="a" src="fengche.png" width="400px" height="400px">
+     <img class="b" src="fengche.png" width="150px" height="150px">
+	 <img class="c" src="fengche.png" width="300px" height="300px">
+</body>
+</html>

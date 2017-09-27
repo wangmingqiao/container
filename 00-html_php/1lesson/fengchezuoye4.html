@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>风车</title>
+	<style>
+	    /*清除间距*/
+		body{
+			margin: 0px;
+			padding: 0px;
+			/*弹性布局显示*/
+			display: flex;
+            /*横向居中*/
+			justify-content: center;
+			/*纵向竖向居下*/
+			align-items: flex-end;
+			/*height: 100%;*/
+			background-color: pink;
+			/*让屏幕不可划，隐藏溢出部分*/
+			overflow: hidden;
+		}
+		/*背景*/
+		.main{
+		    /*相对布局*/
+			position:relative; 
+			width:1800px;
+			min-width:1800px;
+			height: 700px;
+			/*url资源统一定位符(任何资源在网络的唯一位置)*/
+			background-image: url('caodi.png');
+			background-size: contain;
+			/*绑定动画*/
+		}
+		/*风车*/
+		.f1{
+			position: absolute;
+			top: 160px;
+			left: 460px;
+			width: 300px;
+			height: 300px;
+			background-image: url('fengche.png');
+			background-size: contain;
+			animation: rotate linear infinite 1.5s;
+		}
+		.f2{
+			position: absolute;
+			top: 430px;
+			left: 845px;
+			width: 150px;
+			height: 150px;
+			background-image: url('fengche.png');
+			background-size: contain;
+			animation: rotate linear infinite 1.5s;
+		}
+		.f3{
+			position: absolute;
+			top: 340px;
+			left: 1080px;
+			width: 200px;
+			height: 200px;
+			background-image: url('fengche.png');
+			background-size: contain;
+			animation: rotate linear infinite 1.5s;
+		}
+		@keyframes rotate{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(360deg);}
+		}
+	</style>
+</head>
+<body>
+   <div class="main">
+	   <div class="f1"></div>
+	   <div class="f2"></div>
+	   <div class="f3"></div>
+   </div>	
+</body>
+</html>

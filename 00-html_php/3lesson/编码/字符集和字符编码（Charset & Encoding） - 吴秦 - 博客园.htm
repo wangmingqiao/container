@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="zh-cn"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>字符集和字符编码（Charset &amp; Encoding） - 吴秦 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%EF%BC%88Charset%20&amp;%20Encoding%EF%BC%89%20-%20%E5%90%B4%E7%A7%A6%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%EF%BC%88Charset%20&amp;%20Encoding%EF%BC%89%20-%20%E5%90%B4%E7%A7%A6%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/bundle-Minyx2_Lite.css">
+<link type="text/css" rel="stylesheet" href="%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%EF%BC%88Charset%20&amp;%20Encoding%EF%BC%89%20-%20%E5%90%B4%E7%A7%A6%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/61567.css">
+<link id="mobile-style" media="only screen and (max-width: 768px)" type="text/css" rel="stylesheet" href="%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%EF%BC%88Charset%20&amp;%20Encoding%EF%BC%89%20-%20%E5%90%B4%E7%A7%A6%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/bundle-Minyx2_Lite-mobile.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/skynet/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/skynet/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/skynet/wlwmanifest.xml">
+<script src="%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%EF%BC%88Charset%20&amp;%20Encoding%EF%BC%89%20-%20%E5%90%B4%E7%A7%A6%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/jquery.js" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'skynet', cb_enable_mathjax=false;var isLogined=false;</script>
+<script src="%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%EF%BC%88Charset%20&amp;%20Encoding%EF%BC%89%20-%20%E5%90%B4%E7%A7%A6%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/blog-common.js" type="text/javascript"></script>
+<script src="%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%EF%BC%88Charset%20&amp;%20Encoding%EF%BC%89%20-%20%E5%90%B4%E7%A7%A6%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/bundle-Minyx2_Lite.js" language="javascript" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+
+<div id="container">
+    <a class="minyx" href="http://www.cnblogs.com/">代码改变世界</a>
+    <ul id="topMnu">
+        <!-- 统计数据 -->
+        <li>
+            
+                <div id="blog_stats">
+Posts - 107, 
+Articles - 0, 
+Comments - 1703
+<!----></div>
+            
+        </li>
+        <!-- 这边可以增加一些链接 -->
+        <!-- 博客园 -->
+        <li><a href="http://www.cnblogs.com/">Cnblogs</a></li>
+        <!-- 管理 -->
+        <li id="topMnu-dashboard">
+            <a id="lnkDashboard" href="http://www.cnblogs.com/skynet/admin/EditPosts.aspx">Dashboard</a></li>
+        <li>
+            <a id="lnkLogin" href="http://passport.cnblogs.com/login.aspx?ReturnUrl=http://www.cnblogs.com/skynet/archive/2011/05/03/2035105.html">Login</a></li>
+    </ul>
+
+    <script type="text/javascript">
+        var m = window.__blog.topMenuRendered;
+        if (m) { m(__$("topMnu")); }
+    </script>
+
+    <div id="header">
+        <ul id="menu">
+            <!-- 首页，当前section加上current类 -->
+            <li id="menu-home" class="current">
+                <a id="lnkHome" href="http://www.cnblogs.com/skynet/">Home</a></li>
+            <!-- 联系 -->
+            <li id="menu-contact">
+                <a id="lnkContact" href="http://space.cnblogs.com/msg/send/%e5%90%b4%e7%a7%a6">Contact</a></li>
+            <!-- 相册 -->
+            <li id="menu-gallary">
+                <a id="lnkGallery" href="http://www.cnblogs.com/skynet/gallery.html">Gallery</a></li>
+            <!-- Rss订阅 -->
+            <li id="rss">
+                <a id="lnkRss" href="http://www.cnblogs.com/skynet/rss">RSS</a></li>
+        </ul>
+        <div id="newmsg"></div>
+        <h1>
+            <!-- 主标题 -->
+            <a id="lnkBlogTitle" href="http://www.cnblogs.com/skynet/">吴秦（Tyler）</a>
+            <!-- 子标题 -->
+            <small>
+                </small>
+        </h1>
+    </div>
+
+    <script type="text/javascript">
+        var m = window.__blog.headerRendered;
+        if (m) { m(__$("header")); }
+    </script>
+
+    <div id="wrapper">
+        <div id="content">
+            <script type="text/javascript">
+                var m = window.__blog.preRenderPosts;
+                if (m) { m(); }
+            </script>
+            
+<div id="post_detail">
+<div class="post" id="post">
+    <a name="top"></a>
+    <h2><a id="cb_post_title_url" href="http://www.cnblogs.com/skynet/archive/2011/05/03/2035105.html">字符集和字符编码（Charset &amp; Encoding）</a></h2>
+    <small>2011-05-03 11:37 by 吴秦, <span id="post_view_count">174976</span> 阅读, <span id="post_comment_count">57</span> 评论, <a href="#" onclick="AddToWz(2035105);return false;">收藏</a>,  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=2035105" rel="nofollow">编辑</a></small>
+    <div class="entry">
+        <div id="cnblogs_post_body"><p style="text-align: center; margin-left: 36pt;"><span style="color: #1f497d; font-size: 14pt;"><em>——每个软件开发人员应该无条件掌握的知识！
+</em></span></p>
+<p style="text-align: center; margin-left: 36pt;"><span style="color: #1f497d; font-size: 14pt;"><em>——Unicode伟大的创想！
+</em></span></p>
+<p>相信大家一定碰到过，打开某个网页，却显示一堆像乱码，如"бЇЯАзЪСЯ"、"<span style="font-family: Tahoma;">�</span>????????"？还记得HTTP中的Accept-Charset、Accept-Encoding、Accept-Language、Content-Encoding、Content-Language等消息头字段？这些就是接下来我们要探讨的。
+</p>
+<p>目录：
+</p>
+<ul style="margin-left: 45pt;">
+<li><a href="#_1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86">1.基础知识</a>
+		</li>
+<li>
+<div><a href="#_2.%E5%B8%B8%E7%94%A8%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81">2.常用字符集和字符编码</a>
+			</div>
+<ul>
+<li><a href="#_2.1._ASCII%E5%AD%97%E7%AC%A6%E9%9B%86&amp;ASCII%E7%BC%96%E7%A0%81">2.1. ASCII字符集&amp;编码</a>
+				</li>
+<li><a href="#_2.2._GBXXXX%E5%AD%97%E7%AC%A6%E9%9B%86&amp;%E7%BC%96%E7%A0%81">2.2. GBXXXX字符集&amp;编码</a>
+				</li>
+<li><a href="#_2.3._BIG5%E5%AD%97%E7%AC%A6%E9%9B%86&amp;%E7%BC%96%E7%A0%81">2.3. BIG5字符集&amp;编码</a>
+				</li>
+</ul>
+</li>
+<li>
+<div><a href="#_3.%E4%BC%9F%E5%A4%A7%E7%9A%84%E5%88%9B%E6%83%B3Unicode">3.伟大的创想Unicode</a>
+			</div>
+<ul>
+<li><a href="#_3.1.UCS_&amp;_UNICODE">3.1.UCS &amp; UNICODE</a>
+				</li>
+<li><a href="#_3.2.UTF-32">3.2.UTF-32</a>
+				</li>
+<li><a href="#_3.3.UTF-16">3.3.UTF-16</a>
+				</li>
+<li><a href="#_3.4.UTF-8">3.4.UTF-8</a>
+				</li>
+</ul>
+</li>
+<li><a href="#_4.Accept-Charset/Accept-Encoding/Ac">4.Accept-Charset/Accept-Encoding/Accept-Language/Content-Type/Content-Encoding/Content-Language</a>
+		</li>
+<li><a href="#_%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE&amp;%E8%BF%9B%E4%B8%80%E6%AD%A5%E9%98%85%E8%AF%BB">参考文献&amp;进一步阅读</a>
+		</li>
+</ul>
+<p style="background: #0f243e;">&nbsp;</p>
+<h1>1.基础知识
+</h1>
+<p>计算机中储存的信息都是用二进制数表示的；而我们在屏幕上看到的英文、汉字等字符是二进制数转换之后的结果。通俗的说，按照何种规则将字符存储在计
+算机中，如'a'用什么表示，称为"编码"；反之，将存储在计算机中的二进制数解析显示出来，称为"解码"，如同密码学中的加密和解密。在解码过程中，如
+果使用了错误的解码规则，则导致'a'解析成'b'或者乱码。
+</p>
+<p><strong>字符集（Charset）</strong>：是一个系统支持的所有抽象字符的集合。字符是各种文字和符号的总称，包括各国家文字、标点符号、图形符号、数字等。
+</p>
+<p><strong>字符编码（Character Encoding）</strong>：是一套法则，使用该法则能够对自然语言的字符的一个集合
+（如字母表或音节表），与其他东西的一个集合（如号码或电脉冲）进行配对。即在符号集合与数字系统之间建立对应关系，它是信息处理的一项基本技术。通常人
+们用符号集合（一般情况下就是文字）来表达信息。而以计算机为基础的信息处理系统则是利用元件（硬件）不同状态的组合来存储和处理信息的。元件不同状态的
+组合能代表数字系统的数字，因此字符编码就是将符号转换为计算机可以接受的数字系统的数，称为数字代码。
+</p>
+<p style="background: #0f243e; margin-left: 32pt;">&nbsp;</p>
+<h1>2.常用字符集和字符编码
+</h1>
+<p>常见字符集名称：ASCII字符集、GB2312字符集、BIG5字符集、GB18030字符集、Unicode字符集等。计算机要准确的处理各种字符集文字，需要进行字符编码，以便计算机能够识别和存储各种文字。</p>
+<p style="background: #365f91; margin-left: 12pt;">&nbsp;</p>
+<h2>2.1. ASCII字符集&amp;编码
+</h2>
+<p><span style="color: black;"><span style="font-family: Arial;"><strong>ASCII</strong></span><span style="font-family: 宋体;">（</span><span style="font-family: Arial;"><strong>A</strong>merican <strong>S</strong>tandard <strong>C</strong>ode for <strong>I</strong>nformation <strong>I</strong>nterchange</span><span style="font-family: 宋体;">，<strong>美国信息交换标准代码</strong>）是基于<a href="http://zh.wikipedia.org/wiki/%E6%8B%89%E4%B8%81%E5%AD%97%E6%AF%8D"><span style="color: #0645ad;">拉丁字母</span></a>的一套<a href="http://zh.wikipedia.org/wiki/%E7%94%B5%E8%84%91" title="电脑"><span style="color: #0645ad;">电脑</span></a><a href="http://zh.wikipedia.org/wiki/%E7%BC%96%E7%A0%81"><span style="color: #0645ad;">编码</span></a>系统。它主要用于显示<a href="http://zh.wikipedia.org/wiki/%E7%8F%BE%E4%BB%A3%E8%8B%B1%E8%AA%9E" title="现代英语"><span style="color: #0645ad;">现代英语</span></a>，而其扩展版本<a href="http://zh.wikipedia.org/wiki/EASCII"></a></span><span style="color: #0645ad;"><span style="font-family: Arial;">EASCII</span><span style="color: black;"><span style="font-family: 宋体;">则可以勉强显示其他<a href="http://zh.wikipedia.org/wiki/%E8%A5%BF%E6%AC%A7"><span style="color: #0645ad;">西欧</span></a><a href="http://zh.wikipedia.org/wiki/%E8%AF%AD%E8%A8%80"><span style="color: #0645ad;">语言</span></a>。它是现今最通用的单<a href="http://zh.wikipedia.org/wiki/%E5%AD%97%E8%8A%82">字节</a>编码系统（但是有被<a href="http://zh.wikipedia.org/wiki/Unicode"></a></span><span style="font-family: Arial;">Unicode</span><span style="font-family: 宋体;">追上的迹象），并等同于国际标准<a href="http://zh.wikipedia.org/wiki/ISO/IEC_646"></a></span><span style="font-family: Arial;"><strong>ISO/IEC 646</strong></span><span style="font-family: 宋体;">。</span></span><strong>
+				</strong></span></span></p>
+<p><strong>ASCII字符集</strong>：主要包括控制字符（回车键、退格、换行键等）；可显示字符（英文大小写字符、阿拉伯数字和西文符号）。
+</p>
+<p><strong>ASCII编码</strong>：将ASCII字符集转换为计算机可以接受的数字系统的数的规则。使用7位（bits）表示一个字符，共128字符；但是7位编码的字符集只能支持128个字符，为了表示更多的<a href="http://baike.baidu.com/view/3622.htm" target="_blank">欧洲</a>常用字符对ASCII进行了扩展，ASCII扩展字符集使用8位（bits）表示一个字符，共256字符。ASCII字符集映射到数字编码规则如下图所示：
+</p>
+<p style="text-align: center;"><img src="%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%EF%BC%88Charset%20&amp;%20Encoding%EF%BC%89%20-%20%E5%90%B4%E7%A7%A6%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2011050311372042.png" style="width: 758px;">
+	</p>
+<p style="text-align: center;">图1 ASCII编码表
+</p>
+<p style="text-align: center;"><img src="%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%EF%BC%88Charset%20&amp;%20Encoding%EF%BC%89%20-%20%E5%90%B4%E7%A7%A6%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/201105031137219627.png">
+	</p>
+<p style="text-align: center;">图2 扩展ASCII编码表
+</p>
+<p>ASCII的最大缺点是只能显示26个基本拉丁字母、阿拉伯数目字和英式标点符号，因此只能用于显示现代美国英语（而且在处理英语当中的外来词如naïve、café、élite等等时，所有重音符号都不得不去掉，即使这样做会违反拼写规则）。而<a name="OLE_LINK17"></a>EASCII虽然解决了部份西欧语言的显示问题，但对更多其他语言依然无能为力。因此现在的苹果电脑已经抛弃ASCII而转用<a href="http://zh.wikipedia.org/wiki/Unicode">Unicode</a>。
+</p>
+<p style="background: #365f91; margin-left: 12pt;">&nbsp;</p>
+<h2>2.2. GBXXXX字符集&amp;编码
+</h2>
+<p>计算机发明之处及后面很长一段时间，只用应用于美国及西方一些发达国家，ASCII能够很好满足用户的需求。但是当天朝也有了计算机之后，为了显示中文，必须设计一套编码规则用于将汉字转换为计算机可以接受的数字系统的数。
+</p>
+<p>天朝专家把那些127号之后的奇异符号们（即EASCII）取消掉，规定：一个小于127的字符的意义与原来相同，但两个大于127的字符连在一起
+时，就表示一个汉字，前面的一个字节（他称之为高字节）从0xA1用到 
+0xF7，后面一个字节（低字节）从0xA1到0xFE，这样我们就可以组合出大约7000多个简体汉字了。在这些编码里，还把数学符号、罗马希腊的 
+字母、日文的假名们都编进去了，连在ASCII里本来就有的数字、标点、字母都统统重新编了两个字节长的编码，这就是常说的"全角"字符，而原来在127
+号以下的那些就叫"半角"字符了。
+</p>
+<p>上述编码规则就是<strong>GB2312</strong>。<strong>GB2312</strong>或<strong>GB2312-80</strong>是<a href="http://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E5%AE%B6%E6%A0%87%E5%87%86" title="中华人民共和国国家标准">中国国家标准</a><a href="http://zh.wikipedia.org/wiki/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87">简体中文</a><a href="http://zh.wikipedia.org/wiki/%E5%AD%97%E7%AC%A6%E9%9B%86" title="字符集">字符集</a>，全称《<strong>信息交换用汉字编码字符集·基本集</strong>》，又称<a href="http://zh.wikipedia.org/wiki/%E5%9B%BD%E5%AE%B6%E6%A0%87%E5%87%86%E4%BB%A3%E7%A0%81" title="国家标准代码"><strong>GB0</strong></a>，由<a href="http://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%9B%BD%E5%9B%BD%E5%AE%B6%E6%A0%87%E5%87%86%E6%80%BB%E5%B1%80&amp;action=edit&amp;redlink=1" title="中国国家标准总局">中国国家标准总局</a>发布，<a href="http://zh.wikipedia.org/wiki/1981%E5%B9%B4">1981年</a><a href="http://zh.wikipedia.org/wiki/5%E6%9C%881%E6%97%A5">5月1日</a>实施。GB2312编码通行于中国大陆；<a href="http://zh.wikipedia.org/wiki/%E6%96%B0%E5%8A%A0%E5%9D%A1">新加坡</a>等地也采用此编码。中国大陆几乎所有的中文系统和国际化的软件都支持GB2312。GB2312的出现，基本满足了汉字的计算机处理需要，它所收录的汉字已经覆盖中国大陆99.75%的使用频率。对于<a href="http://zh.wikipedia.org/wiki/%E4%BA%BA%E5%90%8D">人名</a>、<a href="http://zh.wikipedia.org/wiki/%E5%8F%A4%E6%B1%89%E8%AF%AD" title="古汉语">古汉语</a>等方面出现的<a href="http://zh.wikipedia.org/wiki/%E7%BD%95%E7%94%A8%E5%AD%97">罕用字</a>，GB2312不能处理，这导致了后来<a href="http://zh.wikipedia.org/wiki/GBK">GBK</a>及<a href="http://zh.wikipedia.org/wiki/GB_18030">GB 18030</a>汉字字符集的出现。下图是GB2312编码的开始部分（由于其非常庞大，只列举开始部分，具体可查看<a href="http://www.knowsky.com/resource/gb2312tbl.htm">GB2312简体中文编码表</a>）：
+</p>
+<p style="text-align: center;"><img src="%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%EF%BC%88Charset%20&amp;%20Encoding%EF%BC%89%20-%20%E5%90%B4%E7%A7%A6%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/201105031137227086.png">
+	</p>
+<p style="text-align: center;">图3 GB2312编码表的开始部分
+</p>
+<p>由于<a href="http://zh.wikipedia.org/wiki/GB_2312" title="GB 2312">GB 2312-80</a>只收录6763个汉字，有不少汉字，如部分在GB 2312-80推出以后才简化的汉字（如"啰"），部分人名用字（如中国前总理<a href="http://zh.wikipedia.org/wiki/%E6%9C%B1%E9%95%95%E5%9F%BA">朱镕基</a>的"镕"字），台湾及香港使用的<a href="http://zh.wikipedia.org/wiki/%E7%B9%81%E4%BD%93%E4%B8%AD%E6%96%87" title="繁体中文">繁体字</a>，<a href="http://zh.wikipedia.org/wiki/%E6%97%A5%E8%AF%AD">日语</a>及<a href="http://zh.wikipedia.org/wiki/%E9%9F%93%E8%AA%9E" title="韩语">朝鲜语</a>汉字等，并未有收录在内。于是厂商微软利用GB 2312-80未使用的编码空间，收录GB 13000.1-93全部字符制定了GBK编码。根据<a href="http://zh.wikipedia.org/wiki/%E5%BE%AE%E8%BD%AF">微软</a>资料，GBK是对GB2312-80的扩展，也就是<a href="http://zh.wikipedia.org/w/index.php?title=CP936&amp;action=edit&amp;redlink=1" title="CP936"><em>CP936</em></a><em>字码表 (Code Page 936)</em>的扩展（之前CP936和GB 2312-80一模一样），最早实现于<a href="http://zh.wikipedia.org/wiki/Windows_95">Windows 95</a>简体中文版。虽然GBK收录<a href="http://zh.wikipedia.org/wiki/GB_13000" title="GB 13000">GB 13000.1-93</a>的全部字符，但编码方式并不相同。GBK自身并非国家标准，只是曾由<a href="http://zh.wikipedia.org/wiki/%E5%9B%BD%E5%AE%B6%E6%8A%80%E6%9C%AF%E7%9B%91%E7%9D%A3%E5%B1%80" title="国家技术监督局">国家技术监督局</a>标准化司、<a href="http://zh.wikipedia.org/wiki/%E7%94%B5%E5%AD%90%E5%B7%A5%E4%B8%9A%E9%83%A8" title="电子工业部">电子工业部</a>科技与质量监督司公布为"技术规范指导性文件"。原始GB13000一直未被业界采用，后续国家标准<a href="http://zh.wikipedia.org/wiki/GB18030" title="GB18030">GB18030</a>技术上兼容GBK而非GB13000。
+</p>
+<p><strong>GB 18030</strong>，全称：<a href="http://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E5%AE%B6%E6%A0%87%E5%87%86" title="中华人民共和国国家标准">国家标准</a>GB 18030-2005《信息技术 中文编码字符集》，是<a href="http://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD">中华人民共和国</a>现时最新的内码字集，是GB 18030-2000《信息技术 信息交换用汉字编码字符集 基本集的扩充》的修订版。与<a href="http://zh.wikipedia.org/wiki/GB_2312" title="GB 2312">GB&nbsp;2312-1980</a>完全兼容，与<a href="http://zh.wikipedia.org/wiki/GBK">GBK</a>基本兼容，支持<a href="http://zh.wikipedia.org/wiki/GB_13000" title="GB 13000">GB&nbsp;13000</a>及<a href="http://zh.wikipedia.org/wiki/Unicode">Unicode</a>的全部统一汉字，共收录汉字70244个。GB 18030主要有以下特点：
+</p>
+<ul>
+<li>与<a href="http://zh.wikipedia.org/wiki/UTF-8">UTF-8</a>相同，采用多<a href="http://zh.wikipedia.org/wiki/%E5%AD%97%E8%8A%82">字节</a>编码，每个字可以由1个、2个或4个字节组成。
+</li>
+<li>编码空间庞大，最多可定义161万个字符。
+</li>
+<li>支持中国国内<a href="http://zh.wikipedia.org/wiki/%E5%B0%91%E6%95%B0%E6%B0%91%E6%97%8F">少数民族</a>的文字，不需要动用造字区。
+</li>
+<li>
+<div>汉字收录范围包含繁体汉字以及日韩汉字
+</div>
+<p style="text-align: center; margin-left: 24pt;"><img src="%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%EF%BC%88Charset%20&amp;%20Encoding%EF%BC%89%20-%20%E5%90%B4%E7%A7%A6%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/201105031137222069.jpg">
+			</p>
+<p style="text-align: center; margin-left: 24pt;">图4 GB18030编码总体结构
+</p>
+<p>本规格的初版使中华人民共和国信息产业部电子工业标准化研究所起草，由国家质量技术监督局于<a href="http://zh.wikipedia.org/wiki/2000%E5%B9%B4">2000年</a><a href="http://zh.wikipedia.org/wiki/3%E6%9C%8817%E6%97%A5">3月17日</a>发布。现行版本为国家质量监督检验总局和中国国家标准化管理委员会于<a href="http://zh.wikipedia.org/wiki/2005%E5%B9%B4">2005年</a><a href="http://zh.wikipedia.org/wiki/11%E6%9C%888%E6%97%A5">11月8日</a>发布，<a href="http://zh.wikipedia.org/wiki/2006%E5%B9%B4">2006年</a><a href="http://zh.wikipedia.org/wiki/5%E6%9C%881%E6%97%A5">5月1日</a>实施。此规格为在中国境内所有软件产品支持的强制规格。
+</p>
+<p style="background: #365f91; margin-left: 12pt;">&nbsp;</p>
+<h2>2.3. BIG5字符集&amp;编码
+</h2>
+<p><strong>Big5</strong>，又称为<strong>大五码</strong>或<strong>五大码</strong>，是使用<a href="http://zh.wikipedia.org/wiki/%E7%B9%81%E4%BD%93%E4%B8%AD%E6%96%87">繁体中文</a>（正体中文）社区中最常用的电脑<a href="http://zh.wikipedia.org/wiki/%E6%B1%89%E5%AD%97" title="汉字">汉字</a><a href="http://zh.wikipedia.org/wiki/%E5%AD%97%E7%AC%A6%E9%9B%86" title="字符集">字符集</a>标准，共收录13,060个汉字。中文码分为<a href="http://zh.wikipedia.org/wiki/%E5%85%A7%E7%A2%BC">内码</a>及<a href="http://zh.wikipedia.org/wiki/%E4%BA%A4%E6%8F%9B%E7%A2%BC">交换码</a>两类，Big5属中文内码，知名的中文交换码有<a href="http://zh.wikipedia.org/wiki/CCCII" title="CCCII">CCCII</a>、<a href="http://zh.wikipedia.org/wiki/CNS11643" title="CNS11643">CNS11643</a>。Big5虽普及于<a href="http://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3">台湾</a>、<a href="http://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9C%8B%E9%A6%99%E6%B8%AF" title="中国香港">香港</a>与<a href="http://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9C%8B%E6%BE%B3%E9%96%80" title="中国澳门">澳门</a>等繁体中文通行区，但长期以来并非当地的国家标准，而只是<a href="http://zh.wikipedia.org/wiki/De_facto" title="De facto"><strong>业界标准</strong></a>。<a href="http://zh.wikipedia.org/wiki/%E5%80%9A%E5%A4%A9%E4%B8%AD%E6%96%87%E7%B3%BB%E7%B5%B1">倚天中文系统</a>、<a href="http://zh.wikipedia.org/wiki/Windows" title="Windows">Windows</a>等主要系统的字符集都是以Big5为基准，但厂商又各自增加不同的造字与造字区，派生成多种不同版本。<a href="http://zh.wikipedia.org/wiki/2003%E5%B9%B4">2003年</a>，Big5被收录到CNS11643中文标准交换码的附录当中，取得了较正式的地位。这个最新版本被称为Big5-2003。
+</p>
+<p>Big5码是一套<a href="http://zh.wikipedia.org/wiki/%E5%8F%8C%E5%AD%97%E8%8A%82%E5%AD%97%E7%AC%A6%E9%9B%86" title="双字节字符集">双字节字符集</a>，使用了双八码存储方法，以两个字节来安放一个字。第一个字节称为"高位字节"，第二个字节称为"低位字节"。"高位字节"使用了0x81-0xFE，"低位字节"使用了0x40-0x7E，及0xA1-0xFE。<span style="color: black; font-size: 11pt;"><span style="font-family: 宋体;">在</span><span style="font-family: Arial;">Big5</span><span style="font-family: 宋体;">的分区中：</span><span style="font-family: Arial;">
+					</span></span></p>
+<div style="margin-left: 48pt;">
+<table style="border-collapse: collapse;" border="0">
+<colgroup><col style="width: 170px;"><col style="width: 486px;"></colgroup>
+<tbody valign="top">
+<tr style="height: 40px;">
+<td style="padding-left: 7px; padding-right: 7px; border-top: solid black 1.0pt; border-bottom: solid black 1.0pt;">
+<p><span style="color: black; font-size: 11pt;"><strong>0x8140-0xA0FE</strong></span></p>
+</td>
+<td style="padding-left: 7px; padding-right: 7px; border-top: solid black 1.0pt; border-bottom: solid black 1.0pt;">
+<p><span style="color: black; font-size: 11pt;"><strong>保留给用户自定义字符（<a href="http://zh.wikipedia.org/wiki/%E9%80%A0%E5%AD%97"><span style="color: #0645ad;">造字</span></a>区）</strong></span></p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="padding-left: 7px; padding-right: 7px; border-bottom: solid black 1.0pt;">
+<p><span style="color: black; font-size: 11pt;"><strong>0xA140-0xA3BF</strong></span></p>
+</td>
+<td style="padding-left: 7px; padding-right: 7px; border-bottom: solid black 1.0pt;">
+<p><a href="http://zh.wikipedia.org/wiki/%E6%A8%99%E9%BB%9E%E7%AC%A6%E8%99%9F" title="标点符号"><span style="color: black;"><strong>标点符号</strong></span></a><span style="color: black;"><strong><span style="font-size: 11pt;">、<a href="http://zh.wikipedia.org/wiki/%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D" title="希腊字母"></a></span>希腊字母<span style="font-size: 11pt;">及特殊符号，包括在0xA259-0xA261，安放了九个<a href="http://zh.wikipedia.org/wiki/%E8%A8%88%E9%87%8F%E7%94%A8%E6%BC%A2%E5%AD%97"></a></span>计量用汉字<span style="font-size: 11pt;">：兙兛兞兝兡兣嗧瓩糎。</span></strong></span></p>
+</td>
+</tr>
+<tr style="height: 55px;">
+<td style="padding-left: 7px; padding-right: 7px; border-top: none; border-left: none; border-bottom: solid black 1.0pt; border-right: none;">
+<p><span style="color: black; font-size: 11pt;"><strong>0xA3C0-0xA3FE</strong></span></p>
+</td>
+<td style="padding-left: 7px; padding-right: 7px; border-top: none; border-left: none; border-bottom: solid black 1.0pt; border-right: none;">
+<p><span style="color: black; font-size: 11pt;"><strong>保留。此区没有开放作造字区用。</strong></span></p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="padding-left: 7px; padding-right: 7px; border-bottom: solid black 1.0pt;">
+<p><span style="color: black; font-size: 11pt;"><strong>0xA440-0xC67E</strong></span></p>
+</td>
+<td style="padding-left: 7px; padding-right: 7px; border-bottom: solid black 1.0pt;">
+<p><a href="http://zh.wikipedia.org/wiki/%E5%B8%B8%E7%94%A8%E6%BC%A2%E5%AD%97"><span style="color: black;"><strong>常用汉字</strong></span></a><span style="color: black;"><strong><span style="font-size: 11pt;">，先按<a href="http://zh.wikipedia.org/wiki/%E7%AD%86%E5%8A%83" title="笔划"></a></span>笔划<span style="font-size: 11pt;">再按<a href="http://zh.wikipedia.org/wiki/%E5%BA%B7%E7%86%99%E5%AD%97%E5%85%B8" title="康熙字典"></a></span>部首<span style="font-size: 11pt;">排序。</span></strong></span></p>
+</td>
+</tr>
+<tr style="height: 61px;">
+<td style="padding-left: 7px; padding-right: 7px; border-top: none; border-bottom: solid black 1.0pt;">
+<p><span style="color: black; font-size: 11pt;"><strong>0xC6A1-0xC8FE</strong></span></p>
+</td>
+<td style="padding-left: 7px; padding-right: 7px; border-top: none; border-bottom: solid black 1.0pt;">
+<p><span style="color: black; font-size: 11pt;"><strong>保留给用户自定义字符（造字区）</strong></span></p>
+</td>
+</tr>
+<tr style="height: 59px;">
+<td style="padding-left: 7px; padding-right: 7px; border-bottom: solid black 1.0pt;">
+<p><span style="color: black; font-size: 11pt;"><strong>0xC940-0xF9D5</strong></span></p>
+</td>
+<td style="padding-left: 7px; padding-right: 7px; border-bottom: solid black 1.0pt;">
+<p><a href="http://zh.wikipedia.org/wiki/%E6%AC%A1%E5%B8%B8%E7%94%A8%E5%AD%97" title="次常用字"><span style="color: black;"><strong>次常用汉字</strong></span></a><span style="color: black; font-size: 11pt;"><strong>，亦是先按笔划再按部首排序。</strong></span></p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="padding-left: 7px; padding-right: 7px; border-top: none; border-bottom: solid black 1.0pt;">
+<p><span style="color: black; font-size: 11pt;"><strong>0xF9D6-0xFEFE</strong></span></p>
+</td>
+<td style="padding-left: 7px; padding-right: 7px; border-top: none; border-bottom: solid black 1.0pt;">
+<p><span style="color: black; font-size: 11pt;"><strong>保留给用户自定义字符（造字区）</strong></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Unicode字符集&amp;UTF编码
+</p>
+<p style="background: #0f243e;">&nbsp;</p>
+<h1>3.伟大的创想Unicode
+</h1>
+<p style="text-align: center; margin-left: 36pt;"><span style="color: #1f497d; font-size: 14pt;"><em>——不得不单独说Unicode
+</em></span></p>
+<p>像天朝一样，当计算机传到世界各个国家时，为了适合当地语言和字符，设计和实现类似GB232/GBK/GB18030/BIG5的编码方案。这样各搞一套，在本地使用没有问题，一旦出现在网络中，由于不兼容，互相访问就出现了乱码现象。
+</p>
+<p>为了解决这个问题，一个伟大的创想产生了——Unicode。Unicode编码系统为表达任意语言的任意字符而设计。它使用<a name="OLE_LINK3"></a>4
+字节的数字来表达每个字母、符号，或者表意文字(ideograph)。每个数字代表唯一的至少在某种语言中使用的符号。（并不是所有的数字都用上了，但
+是总数已经超过了65535，所以2个字节的数字是不够用的。）被几种语言共用的字符通常使用相同的数字来编码，除非存在一个在理的语源学
+(etymological)理由使不这样做。不考虑这种情况的话，每个字符对应一个数字，每个数字对应一个字符。即不存在二义性。不再需要记录"模式"
+了。U+0041总是代表'A'，即使这种语言没有'A'这个字符。
+</p>
+<p>在<a href="http://zh.wikipedia.org/wiki/%E9%9B%BB%E8%85%A6%E7%A7%91%E5%AD%B8" title="计算机科学">计算机科学</a>领域中，<strong>Unicode</strong>（<strong>统一码</strong>、<strong>万国码</strong>、<strong>单一码</strong>、<strong>标准万国码</strong>）是业界的一种标准，它可以使电脑得以体现世界上数十种文字的系统。Unicode 是基于<a href="http://zh.wikipedia.org/wiki/%E9%80%9A%E7%94%A8%E5%AD%97%E7%AC%A6%E9%9B%86" title="通用字符集">通用字符集</a>（Universal Character Set）的标准来发展，并且同时也以书本的形式<a href="http://zh.wikipedia.org/wiki/Unicode"><sup>[1]</sup></a>对外发表。Unicode 还不断在扩增， 每个新版本插入更多新的字符。直至目前为止的第六版，Unicode 就已经包含了超过十万个<a href="http://zh.wikipedia.org/wiki/%E5%AD%97%E7%AC%A6">字符</a>（在<a href="http://zh.wikipedia.org/wiki/2005%E5%B9%B4">2005年</a>，Unicode 的第十万个字符被采纳且认可成为标准之一）、一组可用以作为视觉参考的代码图表、一套编码方法与一组标准<a href="http://zh.wikipedia.org/wiki/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81" title="字符编码">字符编码</a>、
+一套包含了上标字、下标字等字符特性的枚举等。Unicode 组织（The Unicode 
+Consortium）是由一个非营利性的机构所运作，并主导 Unicode 的后续发展，其目标在于：将既有的字符编码方案以Unicode 
+编码方案来加以取代，特别是既有的方案在多语环境下，皆仅有有限的空间以及不兼容的问题。
+</p>
+<p>（<strong>可以这样理解：Unicode是字符集，UTF-32/ UTF-16/ UTF-8是三种字符编码方案。</strong>）
+</p>
+<p style="background: #365f91; margin-left: 12pt;">&nbsp;</p>
+<h2>3.1.UCS &amp; UNICODE
+</h2>
+<p><strong>通用字符集</strong>（Universal Character Set，<strong>UCS</strong>）是由<a href="http://zh.wikipedia.org/wiki/%E5%9C%8B%E9%9A%9B%E6%A8%99%E6%BA%96%E5%8C%96%E7%B5%84%E7%B9%94" title="国际标准化组织">ISO</a>制定的<strong>ISO 10646</strong>（或称<strong>ISO/IEC 10646</strong>）标准所定义的标准字符集。历史上存在两个独立的尝试创立单一字符集的组织，即国际标准化组织（ISO）和多语言软件制造商组成的<a href="http://zh.wikipedia.org/wiki/%E7%B5%B1%E4%B8%80%E7%A2%BC%E8%81%AF%E7%9B%9F">统一码联盟</a>。前者开发的 ISO/IEC 10646 项目，后者开发的<a href="http://zh.wikipedia.org/wiki/%E7%B5%B1%E4%B8%80%E7%A2%BC" title="统一码">统一码</a>项目。因此最初制定了不同的标准。
+</p>
+<p><a href="http://zh.wikipedia.org/wiki/1991%E5%B9%B4">1991年</a>前后，两个项目
+的参与者都认识到，世界不需要两个不兼容的字符集。于是，它们开始合并双方的工作成果，并为创立一个单一编码表而协同工作。从Unicode 
+2.0开始，Unicode采用了与ISO 10646-1相同的字库和字码；ISO也承诺，ISO 
+10646将不会替超出U+10FFFF的UCS-4编码赋值，以使得两者保持一致。两个项目仍都存在，并独立地公布各自的标准。但统一码联盟和
+ISO/IEC 
+JTC1/SC2都同意保持两者标准的码表兼容，并紧密地共同调整任何未来的扩展。在发布的时候，Unicode一般都会采用有关字码最常见的字型，但
+ISO 10646一般都尽可能采用<a href="http://zh.wikipedia.org/w/index.php?title=Century%E5%AD%97%E5%9E%8B&amp;action=edit&amp;redlink=1" title="Century字型">Century字型</a>。
+</p>
+<p style="background: #365f91; margin-left: 12pt;">&nbsp;</p>
+<h2>3.2.UTF-32
+</h2>
+<p>上述使用4字节的数字来表达每个字母、符号，或者表意文字(ideograph)，每个数字代表唯一的至少在某种语言中使用的符号的编码方案，称为<a name="OLE_LINK9"></a>UTF-32。UTF-32又称<strong>UCS-4</strong>是一种将<a href="http://zh.wikipedia.org/wiki/Unicode">Unicode</a>字符编码的协定，对每个字符都使用4字节。就空间而言，是非常没有效率的。
+</p>
+<p>这种方法有其优点，最重要的一点就是可以在常数时间内定位字符串里的第N个字符，因为第N个字符从第4×Nth个字节开始。虽然每一个码位使用固定长定的字节看似方便，它并不如其它Unicode编码使用得广泛。
+</p>
+<p style="background: #365f91; margin-left: 12pt;">&nbsp;</p>
+<h2>3.3.UTF-16
+</h2>
+<p>尽管有Unicode字符非常多，但是实际上大多数人不会用到超过前65535个以外的字符。因此，就有了另外一种Unicode编码方式，叫做
+UTF-16(因为16位 = 
+2字节)。UTF-16将0–65535范围内的字符编码成2个字节，如果真的需要表达那些很少使用的"星芒层(astral 
+plane)"内超过这65535范围的Unicode字符，则需要使用一些诡异的技巧来实现。UTF-16编码最明显的优点是它在空间效率上比UTF-
+32高两倍，因为每个字符只需要2个字节来存储（除去65535范围以外的），而不是UTF-32中的4个字节。并且，如果我们假设某个字符串不包含任何
+星芒层中的字符，那么我们依然可以在常数时间内找到其中的第N个字符，直到它不成立为止这总是一个不错的推断。其编码方法是：
+</p>
+</li>
+<li>如果字符编码U小于0x10000，也就是十进制的0到65535之内，则直接使用两字节表示；
+</li>
+<li>
+<div>如果字符编码U大于0x10000，由于UNICODE编码范围最大为0x10FFFF，从0x10000到0x10FFFF之间 
+共有0xFFFFF个编码，也就是需要20个bit就可以标示这些编码。用U'表示从0-0xFFFFF之间的值，将其前 10 bit作为高位和16 
+bit的数值0xD800进行 逻辑or 操作，将后10 bit作为低位和0xDC00做 逻辑or 操作，这样组成的 
+4个byte就构成了U的编码。
+</div>
+<p>对于UTF-32和UTF-16编码方式还有一些其他不明显的缺点。不同的计算机系统会以不同的顺序保存字节。这意味着字符U+4E2D在UTF-
+16编码方式下可能被保存为4E 2D或者2D 
+4E，这取决于该系统使用的是大尾端(big-endian)还是小尾端(little-endian)。<span style="text-decoration: line-through;">（对于UTF-32编码方式，则有更多种可能的字节排列。）</span>只
+要文档没有离开你的计算机，它还是安全的——同一台电脑上的不同程序使用相同的字节顺序(byte 
+order)。但是当我们需要在系统之间传输这个文档的时候，也许在万维网中，我们就需要一种方法来指示当前我们的字节是怎样存储的。不然的话，接收文档
+的计算机就无法知道这两个字节4E 2D表达的到底是U+4E2D还是U+2D4E。
+</p>
+<p>为了解决这个问题，多字节的Unicode编码方式定义了一个"字节顺序标记(Byte Order 
+Mark)"，它是一个特殊的非打印字符，你可以把它包含在文档的开头来指示你所使用的字节顺序。对于UTF-16，字节顺序标记是U+FEFF。如果收
+到一个以字节FF FE开头的UTF-16编码的文档，你就能确定它的字节顺序是单向的(one way)的了；如果它以FE 
+FF开头，则可以确定字节顺序反向了。
+</p>
+<p style="background: #365f91; margin-left: 12pt;">&nbsp;</p>
+<h2>3.4.UTF-8
+</h2>
+<p><strong>UTF-8</strong>（8-bit Unicode Transformation Format）是一种针对<a href="http://zh.wikipedia.org/wiki/Unicode">Unicode</a>的可变长度<a href="http://zh.wikipedia.org/wiki/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81" title="字符编码">字符编码</a>（<a href="http://zh.wikipedia.org/w/index.php?title=%E5%AE%9A%E9%95%BF%E7%A0%81&amp;action=edit&amp;redlink=1" title="定长码">定长码</a>），也是一种<a href="http://zh.wikipedia.org/w/index.php?title=%E5%89%8D%E7%BC%80%E7%A0%81&amp;action=edit&amp;redlink=1" title="前缀码">前缀码</a>。它可以用来表示Unicode标准中的任何字符，且其编码中的第一个<a href="http://zh.wikipedia.org/wiki/%E5%AD%97%E8%8A%82" title="字节">字节</a>仍与<a href="http://zh.wikipedia.org/wiki/ASCII">ASCII</a>兼容，这使得原来处理ASCII字符的<a href="http://zh.wikipedia.org/wiki/%E8%BB%9F%E9%AB%94" title="软件">软件</a>无须或只须做少部份修改，即可继续使用。因此，它逐渐成为<a href="http://zh.wikipedia.org/wiki/%E9%9B%BB%E5%AD%90%E9%83%B5%E4%BB%B6" title="电子邮件">电子邮件</a>、<a href="http://zh.wikipedia.org/wiki/%E7%B6%B2%E9%A0%81">网页</a>及其他<a href="http://zh.wikipedia.org/wiki/%E5%84%B2%E5%AD%98%E8%A3%9D%E7%BD%AE" title="存储设备">存储</a>或传送文字的应用中，优先采用的编码。<a href="http://zh.wikipedia.org/wiki/%E7%B6%B2%E9%9A%9B%E7%B6%B2%E8%B7%AF%E5%B7%A5%E7%A8%8B%E5%B7%A5%E4%BD%9C%E5%B0%8F%E7%B5%84" title="互联网工程工作小组">互联网工程工作小组</a>（IETF）要求所有<a href="http://zh.wikipedia.org/wiki/%E7%B6%B2%E9%9A%9B%E7%B6%B2%E8%B7%AF" title="互联网">互联网</a><a href="http://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE" title="网络协议">协议</a>都必须支持UTF-8编码。
+</p>
+<p>UTF-8使用一至四个<a href="http://zh.wikipedia.org/wiki/%E5%AD%97%E8%8A%82" title="字节">字节</a>为每个字符编码：
+</p>
+</li>
+</ul>
+<ol>
+<li>128个US-ASCII字符只需一个字节编码（Unicode范围由U+0000至U+007F）。
+</li>
+<li>带有<a href="http://zh.wikipedia.org/wiki/%E9%99%84%E5%8A%A0%E7%AC%A6%E5%8F%B7">附加符号</a>的<a href="http://zh.wikipedia.org/wiki/%E6%8B%89%E4%B8%81%E6%96%87" title="拉丁文">拉丁文</a>、<a href="http://zh.wikipedia.org/wiki/%E5%B8%8C%E8%87%98%E6%96%87" title="希腊文">希腊文</a>、<a href="http://zh.wikipedia.org/wiki/%E8%A5%BF%E9%87%8C%E7%88%BE%E5%AD%97%E6%AF%8D" title="西里尔字母">西里尔字母</a>、<a href="http://zh.wikipedia.org/wiki/%E4%BA%9E%E7%BE%8E%E5%B0%BC%E4%BA%9E%E8%AA%9E" title="亚美尼亚语">亚美尼亚语</a>、<a href="http://zh.wikipedia.org/wiki/%E5%B8%8C%E4%BC%AF%E4%BE%86%E6%96%87" title="希伯来文">希伯来文</a>、<a href="http://zh.wikipedia.org/wiki/%E9%98%BF%E6%8B%89%E4%BC%AF%E6%96%87" title="阿拉伯文">阿拉伯文</a>、<a href="http://zh.wikipedia.org/wiki/%E5%8F%99%E5%88%A9%E4%BA%9A%E6%96%87" title="叙利亚文">叙利亚文</a>及<a href="http://zh.wikipedia.org/wiki/%E5%AE%83%E6%8B%BF%E5%AD%97%E6%AF%8D">它拿字母</a>则需要二个字节编码（Unicode范围由U+0080至U+07FF）。
+</li>
+<li>其他<a href="http://zh.wikipedia.org/wiki/%E5%9F%BA%E6%9C%AC%E5%A4%9A%E6%96%87%E7%A8%AE%E5%B9%B3%E9%9D%A2">基本多文种平面</a>（BMP）中的字符（这包含了大部分常用字）使用三个字节编码。
+</li>
+<li>
+<div>其他极少使用的Unicode<a href="http://zh.wikipedia.org/wiki/%E8%BC%94%E5%8A%A9%E5%B9%B3%E9%9D%A2" title="辅助平面">辅助平面</a>的字符使用四字节编码。
+</div>
+<p>在处理经常会用到的ASCII字符方面非常有效。在处理扩展的拉丁字符集方面也不比UTF-16差。对于中文字符来说，比UTF-32要好。同时，
+（在这一条上你得相信我，因为我不打算给你展示它的数学原理。）由位操作的天性使然，使用UTF-8不再存在字节顺序的问题了。一份以utf-8编码的文
+档在不同的计算机之间是一样的比特流。
+</p>
+<p>总体来说，在Unicode字符串中不可能由码点数量决定显示它所需要的长度，或者显示字符串之后在文本缓冲区中光标应该放置的位置；组合字符、变
+宽字体、不可打印字符和从右至左的文字都是其归因。所以尽管在UTF-8字符串中字符数量与码点数量的关系比UTF-32更为复杂，在实际中很少会遇到有
+不同的情形。
+</p>
+<p><strong>优点</strong>
+			</p>
+</li>
+</ol>
+<ul>
+<li>UTF-8是ASCII的一个<a href="http://zh.wikipedia.org/wiki/%E8%B6%85%E9%9B%86" title="超集">超集</a>。因为一个纯ASCII字符串也是一个合法的UTF-8字符串，所以现存的ASCII文本不需要转换。为传统的扩展ASCII字符集设计的软件通常可以不经修改或很少修改就能与UTF-8一起使用。
+</li>
+<li>使用标准的面向字节的排序例程对UTF-8排序将产生与基于Unicode代码点排序相同的结果。（尽管这只有有限的有用性，因为在任何特定语言或文化下都不太可能有仍可接受的文字排列顺序。）
+</li>
+<li>UTF-8和UTF-16都是<a href="http://zh.wikipedia.org/wiki/%E5%8F%AF%E6%89%A9%E5%B1%95%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80" title="可扩展标记语言">可扩展标记语言</a>文档的标准编码。所有其它编码都必须通过显式或文本声明来指定。
+</li>
+<li>任何<a href="http://zh.wikipedia.org/w/index.php?title=%E9%9D%A2%E5%90%91%E5%AD%97%E8%8A%82&amp;action=edit&amp;redlink=1" title="面向字节">面向字节</a>的<a href="http://zh.wikipedia.org/wiki/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95">字符串搜索算法</a>都可以用于UTF-8的数据（只要输入仅由完整的UTF-8字符组成）。但是，对于包含字符记数的正则表达式或其它结构必须小心。
+</li>
+<li>
+<div>UTF-8字符串可以由一个简单的算法可靠地识别出来。就是，一个字符串在任何其它编码中表现为合法的UTF-8的可能性很低，并随字符串长度
+增长而减小。举例说，字符值C0,C1,F5至FF从来没有出现。为了更好的可靠性，可以使用正则表达式来统计非法过长和替代值（可以查看<a href="http://www.w3.org/International/questions/qa-forms-utf-8">W3 FAQ: Multilingual Forms</a>上的验证UTF-8字符串的正则表达式）。
+</div>
+<p><strong>缺点
+</strong></p>
+<p>因为每个字符使用不同数量的字节编码，所以寻找串中第N个字符是一个O(N)复杂度的操作 — 即，串越长，则需要更多的时间来定位特定的字符。同时，还需要位变换来把字符编码成字节，把字节解码成字符。
+</p>
+<p style="background: #0f243e;">&nbsp;</p>
+<h1>4.Accept-Charset/Accept-Encoding/Accept-Language/Content-Type/Content-Encoding/<a name="OLE_LINK23"></a>Content-Language
+</h1>
+<p>在HTTP中，与字符集和字符编码相关的消息头是<a name="OLE_LINK25"></a>Accept-Charset/Content-Type，另外主区区分Accept-Charset/Accept-Encoding/Accept-Language/Content-Type/Content-Encoding/Content-Language：
+</p>
+<p>Accept-Charset：浏览器申明自己接收的字符集，这就是本文前面介绍的各种字符集和字符编码，如gb2312，utf-8（通常我们说Charset包括了相应的字符编码方案）；
+</p>
+<p>Accept-Encoding：浏览器申明自己接收的编码方法，通常指定压缩方法，是否支持压缩，支持什么压缩方法（gzip，deflate），（注意：这不是只字符编码）；<a name="OLE_LINK5"></a>
+			</p>
+<p>Accept-Language：浏览器申明自己接收的语言。语言跟字符集的区别：中文是语言，中文有多种字符集，比如big5，gb2312，gbk等等；
+</p>
+<p><a name="OLE_LINK27"></a>Content-Type：WEB服务器告诉浏览器自己响应的对象的类型和字符集。例如：Content-Type: text/html; charset='gb2312'
+</p>
+<p>Content-Encoding：WEB服务器表明自己使用了什么压缩方法（gzip，deflate）压缩响应中的对象。例如：Content-Encoding：gzip
+</p>
+<p>Content-Language：WEB服务器告诉浏览器自己响应的对象的语言。
+</p>
+<p style="background: #0f243e;">&nbsp;</p>
+<h1>参考文献&amp;进一步阅读
+</h1>
+</li>
+</ul>
+<ol>
+<li>百度百科. 字符集. <a href="http://baike.baidu.com/view/51987.htm">http://baike.baidu.com/view/51987.htm</a>, 2010-12-28
+</li>
+<li>维基百科. 字符编码. <a href="http://zh.wikipedia.org/wiki/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81">http://zh.wikipedia.org/wiki/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81</a>, 2011-1-5
+</li>
+<li>维基百科. ASCII. <a href="http://zh.wikipedia.org/wiki/ASCII">http://zh.wikipedia.org/wiki/ASCII</a>, 2011-4-5
+</li>
+<li>维基百科. GB2312. <a href="http://zh.wikipedia.org/wiki/GB_2312">http://zh.wikipedia.org/wiki/GB_2312</a>, 2011-3-17
+</li>
+<li>维基百科. GB18030. <a href="http://zh.wikipedia.org/wiki/GB_18030">http://zh.wikipedia.org/wiki/GB_18030</a>, 2010-3-10
+</li>
+<li>维基百科. GBK. <a href="http://zh.wikipedia.org/wiki/GBK">http://zh.wikipedia.org/wiki/GBK</a>, 2011-3-7
+</li>
+<li>维基百科. Unicode. <a href="http://zh.wikipedia.org/wiki/Unicode">http://zh.wikipedia.org/wiki/Unicode</a>, 2011-4-30
+</li>
+<li>Laruence. 字符编码详解(基础). <a href="http://www.laruence.com/2009/08/22/1059.html">http://www.laruence.com/2009/08/22/1059.html</a>, 2009-8-22
+</li>
+<li>Jan Hunt. Character Sets and Encoding for Web Designers - UCS/UNICODE. <a href="http://www.uninetnews.com/other_standards/charset.php">http://www.uninetnews.com/other_standards/charset.php</a></li>
+</ol></div><div id="MySignature" style="display: block;"><p><br>
+</p>
+<div id="SkynetSignature">
+<div><a href="http://www.cnblogs.com/skynet/" target="_blank"></a></div>
+<p>作者：吴秦<br>
+出处：http://www.cnblogs.com/skynet/<br>
+本文基于<a target="_blank" href="http://creativecommons.org/licenses/by/2.5/cn/">署名 2.5 中国大陆</a>许可协议发布，欢迎转载，演绎或用于商业目的，但是必须保留本文的署名<a href="http://www.cnblogs.com/skynet/" target="_blank">吴秦</a>（包含链接）.</p>
+</div>
+</div>
+        <div class="clear"></div>
+        <div id="blog_post_info_block">
+        <div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(2035105,cb_blogId,1);green_channel_success(this,'谢谢推荐！');">好文要顶</a>
+            <a id="green_channel_follow" onclick="follow('8d36b081-9fb2-de11-ba8f-001cf0cd104b');" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%EF%BC%88Charset%20&amp;%20Encoding%EF%BC%89%20-%20%E5%90%B4%E7%A7%A6%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%EF%BC%88Charset%20&amp;%20Encoding%EF%BC%89%20-%20%E5%90%B4%E7%A7%A6%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/skynet/" target="_blank"><img src="%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%EF%BC%88Charset%20&amp;%20Encoding%EF%BC%89%20-%20%E5%90%B4%E7%A7%A6%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/u92071.jpg" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/skynet/">吴秦</a><br>
+            <a href="http://home.cnblogs.com/u/skynet/followees">关注 - 18</a><br>
+            <a href="http://home.cnblogs.com/u/skynet/followers">粉丝 - 3149</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor">荣誉：<a href="http://www.cnblogs.com/expert/" target="_blank">推荐博客</a></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow('8d36b081-9fb2-de11-ba8f-001cf0cd104b');return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(2035105,'Digg')">
+        <span class="diggnum" id="digg_count">148</span>
+    </div>
+    <div class="buryit" onclick="votePost(2035105,'Bury')">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+</div>
+        <div class="clear"></div>
+        <div id="post_next_prev"><a href="http://www.cnblogs.com/skynet/archive/2011/03/29/1998970.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/skynet/archive/2011/03/29/1998970.html" title="发布于2011-03-29 16:50">【日常小记】统计后缀名为.cc、.c、.h的文件数</a><br><a href="http://www.cnblogs.com/skynet/archive/2011/05/28/2061078.html" class="p_n_p_prefix">» </a> 下一篇：<a href="http://www.cnblogs.com/skynet/archive/2011/05/28/2061078.html" title="发布于2011-05-28 21:26">走在网页游戏开发的路上（一）</a><br></div>
+    </div>
+</div>
+    <ul class="postmetadata">
+        <li class="icon_cat" id="BlogPostCategory"></li>
+        <li class="icon_bullet" id="EntryTag"></li>
+    </ul>
+</div>
+<script type="text/javascript">var allowComments=true,cb_blogId=61567,cb_entryId=2035105,cb_blogApp=currentBlogApp,cb_blogUserGuid='8d36b081-9fb2-de11-ba8f-001cf0cd104b',cb_entryCreatedDate='2011/5/3 11:37:00';loadViewCount(cb_entryId);</script>
+<script type="text/javascript">
+    var m = window.__blog.postRendered;
+    if (m) { m(__$("post")); }
+</script>
+<script type="text/javascript">
+    var m = window.__blog.postRenderPosts;
+    if (m) { m(); }
+</script>
+</div><a name="!comments"></a><div id="blog-comments-placeholder"><div id="comments_pager_top"><div class="pager"><a href="#%21comments" onclick="commentManager.renderComments(1,50);return false;">&lt; Prev</a><a href="#%21comments" onclick="commentManager.renderComments(1,50);return false;">1</a><span class="current">2</span></div></div>
+<a class="addcomment" href="#comment_tip">Add your comment</a>
+<h3 id="comments"></h3>
+<div class="feedbackNoItems"></div>
+
+
+<ol class="commentlist" id="commentList">	
+
+		<li class="alt">
+			<h5>
+				<cite><a href="#3166871" class="layer">#51楼</a><a name="3166871" id="comment_anchor_3166871"></a></cite> <a id="a_comment_author_3166871" href="http://www.cnblogs.com/metasequoia/" target="_blank">metasequoia</a> <a href="http://msg.cnblogs.com/send/metasequoia" title="发送站内短消息" class="sendMsg2This">&nbsp;</a><small> <span class="comment_date">2015-04-21 11:08</span></small>
+			</h5>
+			<div id="comment_body_3166871" class="blog_comment_body">不错</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3166871,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3166871,'Bury',this)">反对(0)</a></div><span id="comment_3166871_avatar" style="display:none;">http://pic.cnblogs.com/face/630821/20140506114428.png</span>
+			<div class="opt_comment"><span class="comment_actions"></span></div>
+		</li>
+	
+		<li class="alt">
+			<h5>
+				<cite><a href="#3223895" class="layer">#52楼</a><a name="3223895" id="comment_anchor_3223895"></a></cite> <a id="a_comment_author_3223895" href="http://www.cnblogs.com/kane1990/" target="_blank">balabala已被注册</a> <a href="http://msg.cnblogs.com/send/balabala%E5%B7%B2%E8%A2%AB%E6%B3%A8%E5%86%8C" title="发送站内短消息" class="sendMsg2This">&nbsp;</a><small> <span class="comment_date">2015-07-08 16:17</span></small>
+			</h5>
+			<div id="comment_body_3223895" class="blog_comment_body">好文，顶一个！！</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3223895,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3223895,'Bury',this)">反对(0)</a></div>
+			<div class="opt_comment"><span class="comment_actions"></span></div>
+		</li>
+	
+		<li class="alt">
+			<h5>
+				<cite><a href="#3269800" class="layer">#53楼</a><a name="3269800" id="comment_anchor_3269800"></a></cite> <a id="a_comment_author_3269800" href="http://www.cnblogs.com/hourui/" target="_blank">Alenn</a> <a href="http://msg.cnblogs.com/send/Alenn" title="发送站内短消息" class="sendMsg2This">&nbsp;</a><small> <span class="comment_date">2015-09-19 10:07</span></small>
+			</h5>
+			<div id="comment_body_3269800" class="blog_comment_body">encoding所声明的编码方式不仅限于字符的编码</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3269800,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3269800,'Bury',this)">反对(0)</a></div><span id="comment_3269800_avatar" style="display:none;">http://pic.cnblogs.com/face/706098/20150311205646.png</span>
+			<div class="opt_comment"><span class="comment_actions"></span></div>
+		</li>
+	
+		<li class="alt">
+			<h5>
+				<cite><a href="#3330782" class="layer">#54楼</a><a name="3330782" id="comment_anchor_3330782"></a></cite> <a id="a_comment_author_3330782" href="http://www.cnblogs.com/logosxxw/" target="_blank">Logos</a> <a href="http://msg.cnblogs.com/send/Logos" title="发送站内短消息" class="sendMsg2This">&nbsp;</a><small> <span class="comment_date">2015-12-21 00:14</span></small>
+			</h5>
+			<div id="comment_body_3330782" class="blog_comment_body">感谢！！</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3330782,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3330782,'Bury',this)">反对(0)</a></div><span id="comment_3330782_avatar" style="display:none;">http://pic.cnblogs.com/face/712780/20150716150320.png</span>
+			<div class="opt_comment"><span class="comment_actions"></span></div>
+		</li>
+	
+		<li class="alt">
+			<h5>
+				<cite><a href="#3335443" class="layer">#55楼</a><a name="3335443" id="comment_anchor_3335443"></a></cite> <a id="a_comment_author_3335443" href="http://www.cnblogs.com/darrenji/" target="_blank">Darren Ji</a> <a href="http://msg.cnblogs.com/send/Darren%20Ji" title="发送站内短消息" class="sendMsg2This">&nbsp;</a><small> <span class="comment_date">2015-12-27 11:14</span></small>
+			</h5>
+			<div id="comment_body_3335443" class="blog_comment_body">写得不错</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3335443,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3335443,'Bury',this)">反对(0)</a></div><span id="comment_3335443_avatar" style="display:none;">http://pic.cnblogs.com/face/417212/20141213132343.png</span>
+			<div class="opt_comment"><span class="comment_actions"></span></div>
+		</li>
+	
+		<li class="alt">
+			<h5>
+				<cite><a href="#3428002" class="layer">#56楼</a><a name="3428002" id="comment_anchor_3428002"></a></cite> <a id="a_comment_author_3428002" href="http://www.cnblogs.com/xgqfrms/" target="_blank">xgqfrms</a> <a href="http://msg.cnblogs.com/send/xgqfrms" title="发送站内短消息" class="sendMsg2This">&nbsp;</a><small> <span class="comment_date">2016-05-10 20:28</span></small>
+			</h5>
+			<div id="comment_body_3428002" class="blog_comment_body">字符集和字符编码!<br> Unicode: UTF-8/UTF-16/UTF-32<br> UTF-8, UTF-16, UTF-32 &amp; BOM<br><a href="http://www.cnblogs.com/xgqfrms/p/5479266.html" target="_blank"> http://www.cnblogs.com/xgqfrms/p/5479266.html  </a><br><br><img src="%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%EF%BC%88Charset%20&amp;%20Encoding%EF%BC%89%20-%20%E5%90%B4%E7%A7%A6%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/740516-20160510202842343-2036784006.jpg" alt="" "="" border="0"></div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3428002,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3428002,'Bury',this)">反对(0)</a></div><span id="comment_3428002_avatar" style="display:none;">http://pic.cnblogs.com/face/740516/20151127165124.png</span>
+			<div class="opt_comment"><span class="comment_actions"></span></div>
+		</li>
+	
+		<li class="alt">
+			<h5>
+				<cite><a href="#3451737" class="layer">#57楼</a><a name="3451737" id="comment_anchor_3451737"></a><span id="comment-maxId" style="display:none;">3451737</span><span id="comment-maxDate" style="display:none;">2016/6/14 11:27:36</span></cite> <a id="a_comment_author_3451737" href="http://home.cnblogs.com/u/977938/" target="_blank">草舞风</a> <a href="http://msg.cnblogs.com/send/%E8%8D%89%E8%88%9E%E9%A3%8E" title="发送站内短消息" class="sendMsg2This">&nbsp;</a><small> <span class="comment_date">2016-06-14 11:27</span></small>
+			</h5>
+			<div id="comment_body_3451737" class="blog_comment_body">通俗易懂</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3451737,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3451737,'Bury',this)">反对(0)</a></div>
+			<div class="opt_comment"><span class="comment_actions"></span></div>
+		</li>
+	
+</ol>
+
+<div id="comments_pager_bottom"><div class="pager"><a href="#%21comments" onclick="commentManager.renderComments(1,50);return false;">&lt; Prev</a><a href="#%21comments" onclick="commentManager.renderComments(1,50);return false;">1</a><span class="current">2</span></div></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login('commentform');">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank">【推荐】50万行VC++源码: 大型组态工控、电力仿真CAD与GIS源码库</a><br><a href="http://vcloud.163.com/?adchannel=bp_cnblogs2" target="_blank">【推荐】用1%的研发投入，搭载3倍性能的网易视频云技术</a><br><a href="http://rongcloud.cn/reports/journal2" target="_blank">【推荐】融云发布 App 社交化白皮书 IM 提升活跃超 8 倍</a><br></div>
+<div id="opt_under_post"></div>
+<div id="ad_c1" class="c_ad_block"><a href="http://www.gcpowertools.com.cn/products/componentone.htm?utm_source=cnblogs&amp;utm_medium=blogpage&amp;utm_term=bottom&amp;utm_content=C1&amp;utm_campaign=community" target="_blank"><img src="%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%EF%BC%88Charset%20&amp;%20Encoding%EF%BC%89%20-%20%E5%90%B4%E7%A7%A6%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/24442-20161031104644908-57254170.png" alt="" width="300" height="250"></a></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="http://news.cnblogs.com/n/557456/" target="_blank">董明珠：产融结合是一种大趋势，但我永远不会做金融</a><br> ·  <a href="http://news.cnblogs.com/n/557454/" target="_blank">地球轨道有1亿块太空垃圾威胁未来太空飞行</a><br> ·  <a href="http://news.cnblogs.com/n/557453/" target="_blank">Siri之父William Mark畅谈AI：要让AI不那么像人</a><br> ·  <a href="http://news.cnblogs.com/n/557451/" target="_blank">惠普被曝正在研发新款Windows 10 Mobile智能手机</a><br> ·  <a href="http://news.cnblogs.com/n/557448/" target="_blank">阿里21.5亿投资浙江连锁超市三江购物</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="ad_c2" class="c_ad_block"><a href="https://www.jiguang.cn/devservice/?from=cnblogs01" target="_blank"><img src="%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%EF%BC%88Charset%20&amp;%20Encoding%EF%BC%89%20-%20%E5%90%B4%E7%A7%A6%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/24442-20161114133622451-1554357151.jpg" alt="" width="468" height="60"></a></div>
+<div id="under_post_kb"><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/555750/" target="_blank">循序渐进地代码重构</a><br> ·  <a href="http://kb.cnblogs.com/page/554496/" target="_blank">技术的正宗与野路子</a><br> ·  <a href="http://kb.cnblogs.com/page/553682/" target="_blank">陈皓：什么是工程师文化？</a><br> ·  <a href="http://kb.cnblogs.com/page/551422/" target="_blank">没那么难，谈CSS的设计模式</a><br> ·  <a href="http://kb.cnblogs.com/page/550625/" target="_blank">程序猿媳妇儿注意事项</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+        </div>
+
+        <script type="text/javascript">
+            var m = window.__blog.contentRendered;
+            if (m) { m(__$("content")); }
+        </script>
+
+        <div id="sidebar">
+            
+<div id="about">
+<div>
+<h2 id="about_title">About</h2>
+<div id="about_body">
+<div id="blog-news"><div id="profile_block">昵称：<a href="http://home.cnblogs.com/u/skynet/">吴秦</a><br>园龄：<a href="http://home.cnblogs.com/u/skynet/" title="入园时间：2009-10-07">7年1个月</a><br>荣誉：<a href="http://www.cnblogs.com/expert/">推荐博客</a><br>粉丝：<a href="http://home.cnblogs.com/u/skynet/followers/">3149</a><br>关注：<a href="http://home.cnblogs.com/u/skynet/followees/">18</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="follow('8d36b081-9fb2-de11-ba8f-001cf0cd104b')">+加关注</a></div></div></div>
+<script type="text/javascript">loadBlogNews();</script>
+</div>
+</div>
+</div>
+
+            <script type="text/javascript">
+                var m = window.__blog.aboutRendered;
+                if (m) { m(__$("about")); }
+            </script>
+            
+<div id="mySearchWrapper">
+    <div id="mySearch">
+        <input src="%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%EF%BC%88Charset%20&amp;%20Encoding%EF%BC%89%20-%20%E5%90%B4%E7%A7%A6%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/btnsearch.gif" id="btnZzk" class="submit" onclick="zzk_go();return false;" type="image">
+        <label class="lb_search"><input id="q" onkeydown="return zzk_go_enter(event);" class="keyword" type="text"></label>
+    </div>
+</div>
+
+            <script type="text/javascript">
+                var m = window.__blog.searchFormRendered;
+                if (m) { m(__$("searchform")); }
+            </script>
+            <div id="sideMain">
+            <div id="side-recent-posts">
+        <h2>最新随笔</h2>
+        <ul class="bullet">
+                <li><a href="http://www.cnblogs.com/skynet/p/5406495.html">Unity3D手游开发实践</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/p/4743458.html">Unity3D shader简介</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/p/4229556.html">PyQt5应用与实践</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/p/4173450.html">Nginx + CGI/FastCGI + C/Cpp</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/p/4146083.html">Nginx安装与使用</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/p/4135477.html">优雅的使用Python之软件管理</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/p/4124763.html">优雅的使用python之环境管理</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/p/3570421.html">SpriteSheet精灵动画引擎</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/p/3547380.html">【译】AS3利用CPU缓存</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/p/3543661.html">走在网页游戏开发的路上（十一）</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/p/3428369.html">自定义路径创建Cocos2d-x项目</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/p/3372855.html">C++静态库与动态库</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/p/3343726.html">C++对象模型</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2013/05/06/3063245.html">Python应用与实践</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2013/03/25/2980662.html">PureMVC（AS3）剖析：设计模式（二）</a></li>
+        </ul>
+    </div><div id="side-recent-comments">
+        <h2>最新评论</h2>
+        <ul class="voice">
+                <li>
+                    <a href="http://www.cnblogs.com/skynet/p/4229556.html#3552619">Re:PyQt5应用与实践</a>
+                    <br>
+                    <a class="child" href="http://www.cnblogs.com/skynet/p/4229556.html#3552619">
+                        膜拜大牛
+                        -- 月海沐风
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.cnblogs.com/skynet/p/3372855.html#3542815">Re:C++静态库与动态库</a>
+                    <br>
+                    <a class="child" href="http://www.cnblogs.com/skynet/p/3372855.html#3542815">
+                        打包成一个库，发布给其它的人用的时候，需要有头文件，头文件包含哪些接口可以供外界使用。
+                        -- viola
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.cnblogs.com/skynet/p/3372855.html#3542408">Re:C++静态库与动态库</a>
+                    <br>
+                    <a class="child" href="http://www.cnblogs.com/skynet/p/3372855.html#3542408">
+                        不论引用静态库还是动态库，都要在工程里面包含头文件吗？DynamicMath.h
+                        -- viola
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.cnblogs.com/skynet/p/4146083.html#3541302">Re:Nginx安装与使用</a>
+                    <br>
+                    <a class="child" href="http://www.cnblogs.com/skynet/p/4146083.html#3541302">
+                        初学，很有帮助
+                        -- chenxiaoqiong
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.cnblogs.com/skynet/archive/2010/09/05/1818636.html#3537648">Re:C++的函数重载</a>
+                    <br>
+                    <a class="child" href="http://www.cnblogs.com/skynet/archive/2010/09/05/1818636.html#3537648">
+                        博主，我有个异议："Z后面的数字代表返回类型" 这个猜想我认为不妥。原因1:无论是C++还是Java，函数的重载都不以返回类型为依据。也就是如double foo() 和 int foo() 不能......
+                        -- 代码钢琴家
+                    </a>
+                </li>
+        </ul>
+    </div></div>
+            <div id="sideRight">
+            <div id="side-archives">
+        <h2>随笔档案</h2>
+        <ul class="date">
+                <li><a href="http://www.cnblogs.com/skynet/archive/2016/04.html">2016年4月(1)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2015/08.html">2015年8月(1)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2015/01.html">2015年1月(1)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2014/12.html">2014年12月(3)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2014/11.html">2014年11月(1)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2014/02.html">2014年2月(3)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2013/11.html">2013年11月(1)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2013/10.html">2013年10月(1)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2013/09.html">2013年9月(1)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2013/05.html">2013年5月(1)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2013/03.html">2013年3月(2)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2013/02.html">2013年2月(2)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2013/01.html">2013年1月(2)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2012/12.html">2012年12月(4)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2012/11.html">2012年11月(1)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2012/08.html">2012年8月(1)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2012/04.html">2012年4月(1)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2012/03.html">2012年3月(2)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2012/01.html">2012年1月(1)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2011/07.html">2011年7月(1)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2011/06.html">2011年6月(5)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2011/05.html">2011年5月(3)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2011/03.html">2011年3月(2)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2011/02.html">2011年2月(1)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2011/01.html">2011年1月(2)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2010/12.html">2010年12月(6)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2010/10.html">2010年10月(1)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2010/09.html">2010年9月(4)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2010/07.html">2010年7月(12)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2010/06.html">2010年6月(4)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2010/05.html">2010年5月(14)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2010/04.html">2010年4月(12)</a></li>
+                <li><a href="http://www.cnblogs.com/skynet/archive/2010/03.html">2010年3月(10)</a></li>
+        </ul>
+    </div></div>
+            <div id="sideLeft">
+            <div id="side-calendar">
+        <h2>日历</h2>
+        <div id="blog-calendar"><table id="blogCalendar" class="Cal" title="日历" cellspacing="0" cellpadding="0">
+	<tbody><tr><td colspan="7"><table class="CalTitle" cellspacing="0">
+		<tbody><tr><td class="CalNextPrev"><a href="javascript:void(0);" onclick="loadBlogCalendar('2011/04/01');return false;">&lt;</a></td><td align="center">2011年5月</td><td class="CalNextPrev" align="right"><a href="javascript:void(0);" onclick="loadBlogCalendar('2011/06/01');return false;">&gt;</a></td></tr>
+	</tbody></table></td></tr><tr><th class="CalDayHeader" abbr="日" scope="col" align="center">日</th><th class="CalDayHeader" abbr="一" scope="col" align="center">一</th><th class="CalDayHeader" abbr="二" scope="col" align="center">二</th><th class="CalDayHeader" abbr="三" scope="col" align="center">三</th><th class="CalDayHeader" abbr="四" scope="col" align="center">四</th><th class="CalDayHeader" abbr="五" scope="col" align="center">五</th><th class="CalDayHeader" abbr="六" scope="col" align="center">六</th></tr><tr><td class="CalOtherMonthDay" align="center">24</td><td class="CalOtherMonthDay" align="center">25</td><td class="CalOtherMonthDay" align="center">26</td><td class="CalOtherMonthDay" align="center">27</td><td class="CalOtherMonthDay" align="center">28</td><td class="CalOtherMonthDay" align="center">29</td><td class="CalOtherMonthDay" align="center">30</td></tr><tr><td class="CalWeekendDay" align="center">1</td><td align="center">2</td><td align="center"><a href="http://www.cnblogs.com/skynet/archive/2011/05/03.html"><u>3</u></a></td><td align="center">4</td><td align="center">5</td><td align="center">6</td><td class="CalWeekendDay" align="center">7</td></tr><tr><td class="CalWeekendDay" align="center">8</td><td align="center">9</td><td align="center">10</td><td align="center">11</td><td align="center">12</td><td align="center">13</td><td class="CalWeekendDay" align="center">14</td></tr><tr><td class="CalWeekendDay" align="center">15</td><td align="center">16</td><td align="center">17</td><td align="center">18</td><td align="center">19</td><td align="center">20</td><td class="CalWeekendDay" align="center">21</td></tr><tr><td class="CalWeekendDay" align="center">22</td><td align="center">23</td><td align="center">24</td><td align="center">25</td><td align="center">26</td><td align="center">27</td><td class="CalWeekendDay" align="center"><a href="http://www.cnblogs.com/skynet/archive/2011/05/28.html"><u>28</u></a></td></tr><tr><td class="CalWeekendDay" align="center"><a href="http://www.cnblogs.com/skynet/archive/2011/05/29.html"><u>29</u></a></td><td align="center">30</td><td align="center">31</td><td class="CalOtherMonthDay" align="center">1</td><td class="CalOtherMonthDay" align="center">2</td><td class="CalOtherMonthDay" align="center">3</td><td class="CalOtherMonthDay" align="center">4</td></tr>
+</tbody></table></div>
+    </div><div id="side-categories">
+        <h2>随笔分类</h2>
+        <ul class="folder">
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/238071.html">.NET 2.0配置解谜系列(9)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/240142.html">.NET(C#) Internals (10)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/273085.html">【日常小记】(3)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/252978.html">【转载】(2)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/241385.html">Android开发之旅(18)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/552327.html">as3(1)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/248264.html">C/C++ Internals(15)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/533897.html">cocos2d-x(1)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/404925.html">JavaScript(1)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/637901.html">nginx(2)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/441705.html">PureMVC（AS3）剖析(5)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/290735.html">Python(5)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/725439.html">Unity3D(2)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/248267.html">Unix/Linux下编程(8)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/434928.html">服务器开发(3)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/452687.html">基于AIR Android应用开发(1)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/452612.html">客户端开发(1)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/239648.html">数据库(4)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/302183.html">网页游戏开发(23)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/237841.html">源码剖析：DotText源码学习(2)</a>
+                </li>
+                <li>
+                    
+                    <a href="http://www.cnblogs.com/skynet/category/254728.html">源码剖析：Mongoose(5)</a>
+                </li>
+        </ul>
+    </div><div id="side-top-posts-custom">
+    <h2>推荐排行榜</h2>
+    <div id="TopDiggPostsBlock"><ul><li><a href="http://www.cnblogs.com/skynet/archive/2011/05/03/2035105.html">1. 字符集和字符编码（Charset &amp; Encoding）(148)</a></li><li><a href="http://www.cnblogs.com/skynet/archive/2010/04/12/1709892.html">2. Android开发之旅：环境搭建及HelloWorld(137)</a></li><li><a href="http://www.cnblogs.com/skynet/archive/2010/05/18/1738301.html">3. HTTP协议及其POST与GET操作差异 &amp; C#中如何使用POST、GET等(135)</a></li><li><a href="http://www.cnblogs.com/skynet/archive/2010/12/12/1903949.html">4. Linux Socket编程（不限Linux）(118)</a></li><li><a href="http://www.cnblogs.com/skynet/archive/2012/11/28/2792503.html">5. 浏览器缓存机制(82)</a></li><li><a href="http://www.cnblogs.com/skynet/p/5406495.html">6. Unity3D手游开发实践(73)</a></li><li><a href="http://www.cnblogs.com/skynet/p/3372855.html">7. C++静态库与动态库(62)</a></li><li><a href="http://www.cnblogs.com/skynet/archive/2010/12/11/1903347.html">8. HTTP Keep-Alive模式(55)</a></li><li><a href="http://www.cnblogs.com/skynet/archive/2010/10/30/1865267.html">9. Linux多线程编程（不限Linux）(53)</a></li><li><a href="http://www.cnblogs.com/skynet/archive/2010/06/06/1752616.html">10. Android 开发之旅：view的几种布局方式及实践(45)</a></li></ul></div>
+</div><div id="side-top-posts">
+    <h2>阅读排行榜</h2>
+    <div id="TopViewPostsBlock"><ul><li><a href="http://www.cnblogs.com/skynet/archive/2010/04/12/1709892.html">1. Android开发之旅：环境搭建及HelloWorld(1054360)</a></li><li><a href="http://www.cnblogs.com/skynet/p/4146083.html">2. Nginx安装与使用(232468)</a></li><li><a href="http://www.cnblogs.com/skynet/archive/2010/12/12/1903949.html">3. Linux Socket编程（不限Linux）(230042)</a></li><li><a href="http://www.cnblogs.com/skynet/archive/2011/05/03/2035105.html">4. 字符集和字符编码（Charset &amp; Encoding）(174977)</a></li><li><a href="http://www.cnblogs.com/skynet/archive/2010/06/06/1752616.html">5. Android 开发之旅：view的几种布局方式及实践(98044)</a></li><li><a href="http://www.cnblogs.com/skynet/archive/2010/04/15/1712924.html">6. Android开发之旅：android架构(97572)</a></li><li><a href="http://www.cnblogs.com/skynet/p/3372855.html">7. C++静态库与动态库(77163)</a></li><li><a href="http://www.cnblogs.com/skynet/archive/2010/04/13/1711479.html">8. Android开发之旅：HelloWorld项目的目录结构(74046)</a></li><li><a href="http://www.cnblogs.com/skynet/archive/2010/09/05/1818636.html">9. C++的函数重载(73793)</a></li><li><a href="http://www.cnblogs.com/skynet/archive/2010/12/25/1916873.html">10. 【日常小记】linux中强大且常用命令：find、grep(72653)</a></li></ul></div>
+</div>    
+    
+    
+    
+    
+
+
+        
+<div id="side-link-240090">
+            <h2>系列索引帖</h2>
+            <ul class="chain">
+                        <li>
+                            <a href="http://www.cnblogs.com/skynet/archive/2010/04/02/1703380.html" target="_self">.NET 2.0配置解谜系列索引（完结）</a>
+                        </li>
+            </ul>
+        </div></div>
+            
+                <div id="sideContainer"></div>
+                <script type="text/javascript">
+                    $.ajax({
+                        url: '/' + currentBlogApp + '/mvc/blog/Minyx2_Lite_SideColumn.aspx',
+                        data: '{}',
+                        type: 'post',
+                        dataType: 'text',
+                        contentType: 'application/json; charset=utf-8',
+                        success: function (data) {
+                            if (data) {
+                                $("#sideContainer").html(data);
+                                loadBlogDefaultCalendar();
+                                loadBlogSideBlocks();
+                                var m = window.__blog.sideContainerRendered;
+                                if (m) { m(__$("sideContainer")); }
+                                window.__blog.sidebar.__layout();
+                            }
+                        }
+                    });
+
+                </script>
+            
+        </div>
+
+        <script type="text/javascript">
+            var m = window.__blog.sidebarRendered;
+            if (m) { m(__$("sidebar")); }
+        </script>
+
+        <div id="footer">
+            
+<p id="logoFoot">
+    <a href="http://www.spiga.com.mx/" title="Agencia Interactiva Spiga">www.spiga.com.mx</a>
+</p>
+<div class="footText">
+<p>
+Copyright ©2016 吴秦
+</p>
+<p>
+<a href="http://www.cnblogs.com/">博客园</a>
+</p>
+</div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var m = window.__blog.wrapperRendered;
+        if (m) { m(__$("wrapper")); }
+    </script>
+
+</div>
+<script type="text/javascript">
+    var m = window.__blog.containerRendered;
+    if (m) { m(__$("container")); }
+</script>
+<!--PageEndHtml Block Begin-->
+<script language="javascript">
+$(document).ready(function(){
+    $("body").prepend($("#div_digg").css({
+        "position" : "fixed", "right" : "0px", "bottom" : "0px", "z-index" : "10", "background-color" : "white", "margin" : "10px", "padding" : "10px", "border" : "1px solid #cccccc"}));
+});
+</script>
+
+<!--PageEndHtml Block End-->
+
+
+</body></html>

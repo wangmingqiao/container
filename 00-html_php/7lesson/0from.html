@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>表单练习</title>
+    </head>
+    <body>
+
+   <!-- 表单当做是html的一种请求工具 -->
+   <!-- 请求：向服务器索要数据 -->
+   <!-- 请求的过程中需要给服务器传递一下字段，目的是了让服务器根据你所传递的线索返回你想要的数据 -->
+<!--
+   action:请求服务器的地址
+   method:请求方法
+   get
+   post -->
+    <form action="0formserver.php" method="get">
+        <fieldset>
+             <!-- 文本框 -->
+            <input type="text" name="user" /><br />
+            <!-- 密码 -->
+            <input type="password" name="pwd"/><br />
+            <!-- 按钮 value属性改按钮的显示的文字-->
+            <!-- submit:触发请求 -->
+
+        </fieldset>
+
+
+       <fieldset>
+            <legend>单选</legend>
+            <label >男</label>
+            <input type="radio" name="sex" value="man" />
+            <label >女</label>
+            <input type="radio" name="sex" value="woman" />
+            <label >小孩</label>
+            <input type="radio" name="sex" value="child" />
+       </fieldset>
+        <fieldset>
+            <legend>多选</legend>
+            <label >php</label>
+            <input type="checkbox" name="hobby" value="php"/>
+            <label >java</label>
+            <input type="checkbox" name="hobby" value="java" />
+            <label >html</label>
+            <input type="checkbox" name="hobby" value="html" />
+       </fieldset>
+        <fieldset>
+
+            <legend>下拉选择</legend>
+            <select name="category">
+                <option value="note">日记</option>
+                <option value="study">学习</option>
+                <option value="music">音乐</option>
+            </select>
+       </fieldset>
+        <fieldset>
+            <legend>文本区域</legend>
+            <textarea name="content" id="" cols="40" rows="20">
+                文本区域
+            </textarea>
+       </fieldset>
+
+
+        <input type="submit" value="提交数据" /><br/>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+//增
+$sql="INSERT INTO blog values(值1,值2,值3,值4)";
+$sql="INSERT INTO blog(id,name,age,tel,adress)VALUES(值1,值2,值3,值4,值5)";
+//删
+$sql="DELETE from blog WHERE name='小李'";
+//改
+$sql="UPDATE blog SET age='30' where name='小李'";
+//查
+$sql="SELECT * FROM blog";
+$res=mysqli_query($connect,$sql);
+if (mysqli_num_rows($res)>0) {
+    while ($row=mysqli_fetch_assoc($res)) {
+        var_dump($row);
+    }
+}
+//单条执行语句
+if (mysqli_query($connect,$sql)) {
+    echo"插入成功";
+}else{
+    echo "插入失败";
+}
+//多条执行语句
+if (mysqli_multi_query($connect,$sql)) {
+    echo"插入成功";
+}else{
+    echo "插入失败";
+}

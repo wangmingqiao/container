@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1flaot 浮动</title>
+	<style>
+		body{
+			margin:0px;
+			padding: 0px;
+		}
+		div{
+			margin: 10px;
+			background: red;
+			border:3px yellow solid;
+		}
+		/*容器*/
+		.container{
+			margin: 0px auto;
+			width: 1300px;
+			height: 1000px;
+		}
+		/*头部*/
+		.header{
+			height: 100px;
+		}
+		/*内容*/
+		.content{
+			float: left;
+			height:700px;
+			width: 810px;
+		}
+        .sideLeft{
+			float: left;
+			height: 700px;
+			width: 200px;
+		}
+        /*脚步*/
+		.footer{
+			/*清除浮动，让footer避开浮动*/
+			clear: both;
+			height:100px;
+
+		}
+		.a{
+			border:black 2px solid;
+			width: 100px;
+			height: 40px;
+		}
+	</style>
+</head>
+<body>
+    <div class="container">
+         <div class="header"><h1 align="center">欢迎光临我的博客</h1></div>
+         <div class="sideLeft"></div>
+         <div class="content"></div>
+         <div class="sideLeft"></div>
+         <div class="footer"></div>
+    	
+    </div>
+	
+</body>
+</html>
